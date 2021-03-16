@@ -1,21 +1,28 @@
-#demo {
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+}
+#lp-container-laptop{
+    background-image: url(./futaba-lp.jpg);
+    background-size: auto 80%;
+    background-repeat: no-repeat;
+}
+#futaba-logo {
+    height: 40px;
+}
+
+nav, .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     color: white;
-    background-color: blue;
-    width: 50%;
-    height: 400px;
-    margin-left: 80%;
-    -moz-transform: rotate(24deg);
-    -webkit-transform: rotate(24deg);
-    -o-transform: rotate(24deg);
-    -ms-transform: rotate(24deg);
-    transform: rotate(24deg);
-    z-index: 0;
-    }
-    img {
-        width: 40%;
-        height: auto;
-        margin-left: 70%;
-        margin-top: 20%;
-        z-index: 1;
-        position: fixed;
-    }
+}
+#menu-wrap > a{
+    text-decoration: none;
+    color: white;
+}
