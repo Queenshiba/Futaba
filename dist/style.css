@@ -60,12 +60,23 @@ nav, .nav {
 }
 #about-container-laptop{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    /* height: 90vh; */
 }
 .wrap {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 #about-container-laptop img{
     height: 80px;
+}
+.text-area {
+    width: 60%;
+}
+.section {
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    padding: 5% 0;
 }
