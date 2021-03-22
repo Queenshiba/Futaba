@@ -66,6 +66,7 @@ nav, .nav {
 .wrap {
     display: flex;
     flex-direction: row;
+    width: 50%;
     justify-content: space-evenly;
 }
 #about-container-laptop img{
