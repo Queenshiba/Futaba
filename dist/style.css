@@ -349,37 +349,21 @@ nav, .nav {
     }
 }
 
-.price-title {
-    height: 200px;
-    background: #2EB872;
+#price-container-laptop {
+    background-color: burlywood;
+    height: 80vh;
+}
+.price-box {
+    background-color: blueviolet;
+
+}
+.circle {
     display: flex;
     justify-content: center;
-}
-
-.price-title>p {
-    display: flex;
-    margin: auto 0;
+    align-items: center;
     color: white;
-    font-size: 2em;
-}
-
-.price-detail {
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.price-detail>p {
-    display: flex;
-    margin: 0 auto;
-}
-
-@media only screen and (max-width: 500px) {
-    .price-title {
-        height: 150px;
-    }
-    .price-title>p {
-        font-size: 1.5em;
-    }
+    background-color: blue;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
 }
