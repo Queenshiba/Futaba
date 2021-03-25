@@ -355,7 +355,20 @@ nav, .nav {
 }
 .price-box {
     background-color: blueviolet;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 1%;
+    position: relative;
+    height: 500px;
+    margin-top: 10%;
+    border-radius: 2em;
+}
+.wrap-price-boxes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 .circle {
     display: flex;
@@ -366,4 +379,6 @@ nav, .nav {
     border-radius: 50%;
     height: 100px;
     width: 100px;
+    position: absolute;
+    top: -10%;
 }
