@@ -350,16 +350,16 @@ nav, .nav {
 }
 
 #price-container-laptop {
-    background-color: burlywood;
+    /* background-color: burlywood; */
     height: 80vh;
 }
 .price-box {
-    background-color: blueviolet;
+    border: rgb(255, 93, 110, 0.88) solid;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    margin: 0 1%;
+    margin: 0 2%;
     position: relative;
     height: 500px;
     margin-top: 10%;
@@ -375,10 +375,13 @@ nav, .nav {
     justify-content: center;
     align-items: center;
     color: white;
-    background-color: blue;
+    background-color: rgb(46, 184, 114, 1.0);
     border-radius: 50%;
     height: 100px;
     width: 100px;
     position: absolute;
     top: -10%;
+}
+.price-detail {
+    padding:0 5%;
 }
