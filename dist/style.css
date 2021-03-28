@@ -385,3 +385,478 @@ nav, .nav {
 .price-detail {
     padding:0 5%;
 }
+
+/* events schedule */
+/* yearlytimeline */
+
+.yearlytimeline {
+    padding-bottom: 40px;
+}
+
+.yearlytimeline-title {
+    background: #2EB872;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+}
+
+.yearlytimeline-title>p {
+    display: flex;
+    margin: auto 0;
+    color: white;
+    font-size: 2em;
+}
+
+/* .yearlytimeline-detail {
+    margin: auto 0;
+    display: flex;
+    justify-content: center;
+} */
+
+.yearlytimeline-detail>p {
+    display: flex;
+    margin: auto 0;
+}
+
+@media only screen and (max-width: 500px) {
+    .yearlytimeline-title {
+        height: 150px;
+    }
+}
+
+.contents-names {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+}
+
+.contents-names p {
+    margin: auto;
+    font-size: 1.8em;
+}
+
+.bar {
+    background: #A4DBB8;
+    position: absolute;
+    left: 50%;
+    width: 5px;
+    height: 1500px;
+    z-index: -1;
+    box-shadow: -1px 6px 14px -4px rgba(115, 114, 115, 1);
+}
+
+.tag {
+    font-size: 0.7em;
+    text-decoration: underline;
+    padding-left: 10px;
+}
+
+.container-left {
+    /* background: yellow; */
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    /* background: lightsalmon; */
+    margin: 0 auto;
+}
+
+.comment-left {
+    background: rgb(255, 243, 142, 0.7);
+    height: 50px;
+    width: 300px;
+    position: relative;
+    box-shadow: -1px 3px 14px -1px rgba(150, 150, 150, 0.5);
+}
+
+.timeline-content {
+    text-align: center;
+}
+
+.month {
+    background: #68C78E;
+    width: 60px;
+    height: 60px;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+    color: white;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: -1px 6px 14px -4px rgba(115, 114, 115, 0.5);
+    z-index: 1;
+    font-size: 1.2em;
+}
+
+.triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 20px solid rgb(255, 243, 142, 0.5);
+    margin-right: auto;
+    z-index: 1;
+}
+
+.timeline-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.container-right {
+    /* background: pink; */
+    width: 50%;
+    margin-left: 50%;
+    display: flex;
+    flex-direction: row;
+    padding-top: -30px;
+}
+
+#end {
+    padding-top: 10px;
+}
+
+.comment-right {
+    color: #FFF;
+    background: rgba(255, 112, 126, 0.7);
+    height: 50px;
+    width: 300px;
+    position: relative;
+    box-shadow: -1px 3px 14px -4px rgba(150, 150, 150, 0.5);
+    z-index: -1;
+}
+
+.triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-right: 20px solid rgba(255, 112, 126, 0.7);
+    z-index: 1;
+}
+
+.timeline-img-container img {
+    width: auto;
+    position: absolute;
+}
+
+.timeline-img-container {
+    display: flex;
+    width: 100%;
+}
+
+.timeline-img-container div {
+    position: relative;
+    margin: 0 auto;
+}
+
+/* spring img */
+
+.setsubun {
+    margin-left: 80%;
+    height: 90px;
+}
+
+.ladybird {
+    margin-left: 65%;
+    height: 40px;
+}
+
+.spring {
+    height: 80px;
+    margin-left: 70%;
+}
+
+.sakura {
+    height: 80px;
+    margin-left: 18%;
+}
+
+.sakura1 {
+    height: 50px;
+    margin-left: 25%;
+}
+
+.koiobori {
+    height: 90px;
+    margin-left: 80%;
+}
+
+.ajisai {
+    height: 70px;
+    margin-left: 65%;
+    z-index: -1;
+}
+
+.snail {
+    height: 40px;
+    margin-left: 71%;
+}
+
+/* summer img */
+
+.homework {
+    height: 70px;
+    margin-left: 65%;
+}
+
+.sun-umbrella {
+    height: 70px;
+    margin-left: 80%;
+}
+
+.sun {
+    height: 60px;
+    margin-left: 20%;
+}
+
+.sunflower1 {
+    height: 60px;
+    margin-left: 16%;
+}
+
+.sunflower2 {
+    height: 63px;
+    margin-left: 20%;
+    z-index: 1;
+}
+
+.sunflower3 {
+    height: 60px;
+    margin-left: 24%;
+}
+
+.mushiami {
+    height: 45px;
+    margin-left: 30%;
+}
+
+/* autumn img */
+
+.dragonfly {
+    height: 80px;
+    margin-left: 70%;
+}
+
+.susuki {
+    height: 80px;
+    margin-left: 80%;
+}
+
+/* winter img */
+
+.snowman {
+    height: 70px;
+    margin-left: 70%;
+}
+
+.tree {
+    height: 70px;
+    margin-left: 75%;
+}
+
+.snowflake1 {
+    height: 28px;
+    margin-left: 22%;
+}
+
+.snowflake2 {
+    height: 40px;
+    margin-left: 25%;
+}
+
+.snowflake3 {
+    height: 20px;
+    margin-left: 29%;
+}
+
+.hagoita {
+    height: 70px;
+    margin-left: 28%;
+}
+
+.kadomatsu {
+    height: 80px;
+    margin-left: 20%;
+}
+
+.note {
+    font-size: 0.8em;
+    text-align: center;
+}
+
+@media only screen and (min-width: 800px) {
+    .sunflower1-m, .sunflower2-m, .sunflower3-m, .mushiami-m, .tag {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .bar {
+        position: absolute;
+        left: 10%;
+        height: 1900px;
+    }
+    .month {
+        width: 60px;
+        height: 60px;
+        -moz-border-radius: 60px;
+        -webkit-border-radius: 60px;
+        border-radius: 60px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 60px;
+        font-size: 1em;
+        position: relative;
+    }
+    .timeline-img-container {
+        width: 20%;
+    }
+    .contents-names {
+        height: 50px;
+    }
+    .contents-names p {
+        display: none;
+    }
+    .triangle-right {
+        display: none;
+    }
+    .triangle-left-hidden {
+        width: 0;
+        height: 0;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        border-right: 20px solid rgb(255, 243, 142, 0.5);
+        z-index: 1;
+    }
+    .container-right {
+        margin-left: 10%;
+        padding: 10px 0;
+        padding-right: 10px;
+    }
+    .container-left {
+        padding: 5px 0;
+        margin-left: 10%;
+        padding: 10px 0;
+        padding-right: 10px;
+    }
+    /* spring img */
+    .setsubun {
+        margin-left: 60%;
+        height: 70px;
+        z-index: 1;
+    }
+    .ladybird {
+        margin-left: 35%;
+        height: 20px;
+    }
+    .spring {
+        height: 60px;
+        margin-left: 40%;
+        z-index: 1;
+    }
+    .sakura {
+        height: 60px;
+        margin-left: 25%;
+    }
+    .sakura1 {
+        height: 30px;
+        margin-left: 35%;
+    }
+    .koiobori {
+        height: 50px;
+        margin-left: 70%;
+    }
+    .ajisai {
+        height: 50px;
+        margin-left: 35%;
+        z-index: -1;
+    }
+    .snail {
+        height: 20px;
+        margin-left: 50%;
+    }
+    /* summer img */
+    .homework {
+        height: 40px;
+        margin-left: 25%;
+    }
+    .sun-umbrella {
+        height: 70px;
+        margin-left: 65%;
+        z-index: 1;
+    }
+    .sun {
+        display: none;
+    }
+    .sunflower1, .sunflower2, .sunflower3, .mushiami {
+        display: none;
+    }
+    .sunflower1-m {
+        height: 46px;
+        margin-left: 45%;
+    }
+    .sunflower2-m {
+        height: 50px;
+        margin-left: 55%;
+        z-index: 1;
+    }
+    .sunflower3-m {
+        height: 46px;
+        margin-left: 65%;
+    }
+    .mushiami-m {
+        height: 40px;
+        margin-left: 75%;
+    }
+    /* autumn img */
+    .dragonfly {
+        height: 70px;
+        margin-left: 55%;
+        z-index: 1;
+    }
+    .susuki {
+        height: 70px;
+        margin-left: 70%;
+        z-index: 1;
+    }
+    /* winter img */
+    .snowman {
+        height: 60px;
+        margin-left: 38%;
+    }
+    .tree {
+        height: 70px;
+        margin-left: 55%;
+    }
+    .snowflake1 {
+        height: 18px;
+        margin-left: 30%;
+    }
+    .snowflake2 {
+        height: 10px;
+        margin-left: 38%;
+    }
+    .snowflake3 {
+        height: 20px;
+        margin-left: 49%;
+    }
+    .hagoita {
+        height: 60px;
+        margin-left: 54%;
+    }
+    .kadomatsu {
+        height: 80px;
+        margin-left: 70%;
+    }
+}
