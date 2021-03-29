@@ -15,6 +15,7 @@
 }
 #logo-wrap {
     padding-left: 5%;
+    font-size: 1.5em;
 }
 #futaba-logo {
     height: 40px;
@@ -27,8 +28,11 @@ nav, .nav {
     flex-direction: row;
     align-items: center;
     color: white;
-    background-color: blue;
+    font-weight: 400;
+
+    /* background-color: blue; */
 }
+
 #menu-wrap {
     display: flex;
     flex-direction: row;
@@ -36,6 +40,7 @@ nav, .nav {
     margin-left: auto;
     padding-right: 5%;
     width: 50%;
+    font-size: 1.2em;
 }
 #menu-wrap > a{
     text-decoration: none;
@@ -79,7 +84,7 @@ nav, .nav {
     width: 60%;
 }
 .section {
-    background-color: aqua;
+    /* background-color: aqua; */
     display: flex;
     flex-direction: row;
     padding: 5% 0;
@@ -354,7 +359,7 @@ nav, .nav {
     height: 80vh;
 }
 .price-box {
-    border: rgb(255, 93, 110, 0.88) solid;
+    border:  rgb(46, 184, 114, 1.0) solid 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -375,7 +380,7 @@ nav, .nav {
     justify-content: center;
     align-items: center;
     color: white;
-    background-color: rgb(46, 184, 114, 1.0);
+    background-color: rgb(255, 93, 110, 1);
     border-radius: 50%;
     height: 100px;
     width: 100px;
