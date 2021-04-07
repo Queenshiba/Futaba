@@ -17,6 +17,8 @@
     font-size: 1.8em;
     font-weight: bold;
     width: 30%;
+    display: flex;
+    justify-content: center;
 }
 
 #futaba-logo {
@@ -102,6 +104,7 @@ a {
 
 #about-container-laptop img {
     height: 60px;
+     
 }
 
 #about-left {
