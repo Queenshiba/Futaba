@@ -74,18 +74,29 @@ a {
 }
 
 #btn-contact {
-    background: burlywood;
+    background-color: #2EB872;
     text-align: center;
     padding: 10px;
     width: 120px;
+    border-radius: 0.5em;
+    color: white;
+    font-weight: bold;
 }
-
+#btn-contact a {
+    color: white;
+    font-weight: bold;
+}
 #btn-only-students {
     background-color: rgb(255, 93, 110, 1);
-    padding: 10px 5px;
-    border-radius: 0.8em;
+    padding: 5px 10px;
+    border-radius: 0.5em;
+    font-size: 0.8em;
+    display: flex;
 }
+#btn-only-students > a {
 
+text-align: center;
+}
 /* about */
 
 #about-container-laptop {
@@ -94,23 +105,26 @@ a {
     background-color: rgb(46, 184, 114, 1);
     color: white;
     margin-top: 15vh;
-    height: 80vh;
+    height: 100vh;
 }
 
 .wrap {
     display: flex;
     flex-direction: row;
+    width: 95%;
+    justify-content: center;
+    align-items: center;
 }
 
 #about-container-laptop img {
     height: 60px;
-     
+    padding: 5% 5% 5% 0;
 }
 
 #about-left {
     width: 40%;
     border-right: 5px solid white;
-    padding: 0 3% 0 0;
+    padding: 10% 3% 0 0;
 }
 
 #about-left>h1 {
@@ -124,7 +138,7 @@ a {
 
 #about-right {
     width: 60%;
-    padding:0 3%;
+    padding:5% 3%;
     justify-content: space-evenly;
 }
 
@@ -138,9 +152,10 @@ a {
 /* schedule */
 
 .schedule {
-    /* background: red; */
+    /* background: red;  */
     display: flex;
     flex-direction: column;
+    height: auto;
 }
 
 .schedule-title {
@@ -158,8 +173,7 @@ a {
 .schedule-container {
     display: flex;
     flex-direction: row;
-    padding-left: 20px;
-    padding-bottom: 30px;
+    padding: 15% 0 30px 20px;
 }
 
 .grid-container {
@@ -264,38 +278,38 @@ a {
 
 .SatEmp {
     grid-area: 2 / 7 / 8 / 8;
-    background: rgba(190, 191, 192, 0.21);
+    background: rgba(190, 191, 192, 1);
     writing-mode: vertical-rl;
 }
 
 .time1 {
     grid-area: 2 / 1 / 3 / 2;
-    background: rgb(254, 255, 234, 1);
+    background: rgb(46, 184, 114, 0.1);
 }
 
 .time2 {
     grid-area: 3 / 1 / 4 / 2;
-    background: rgb(254, 255, 234, 0.3);
+    background: rgb(46, 184, 114, 0.3);
 }
 
 .time3 {
     grid-area: 4 / 1 / 5 / 2;
-    background: rgb(254, 255, 234, 1);
+    background: rgb(46, 184, 114, 0.1);
 }
 
 .time4 {
     grid-area: 5 / 1 / 6 / 2;
-    background: rgb(254, 255, 234, 0.3);
+    background: rgb(46, 184, 114, 0.3);
 }
 
 .time5 {
     grid-area: 6 / 1 / 7 / 2;
-    background: rgb(254, 255, 234, 1);
+    background: rgb(46, 184, 114, 0.1);
 }
 
 .time6 {
     grid-area: 7 / 1 / 8 / 2;
-    background: rgb(254, 255, 234, 0.3);
+    background: rgb(46, 184, 114, 0.3);
 }
 
 /* .class1 {
@@ -369,10 +383,15 @@ a {
 }
 
 .schedule-detail {
-    margin: auto 0;
-    width: 60%;
+display: flex;
+flex-direction: column;
+    width: 40%;
     padding-left: 40px;
 }
+.schedule-detail h1 {
+    margin-bottom: 50%;
+    }
+
 
 @media only screen and (max-width: 800px) {
     .schedule-title>p {
@@ -399,9 +418,10 @@ a {
     }
 }
 
+ /*price */
 #price-container-laptop {
     /* background-color: burlywood; */
-    height: 80vh;
+    height: 100vh;
 }
 
 .price-box {
