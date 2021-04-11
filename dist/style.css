@@ -41,10 +41,18 @@ nav, .nav {
 
 .green {
     width: 100%;
-    height: 2%;
+    max-height: 3%;
     background-color: rgb(46, 184, 114, 1);
+    display: flex;
+    justify-content: center;
 }
+#school-branch {
+    display: flex;
+    font-size: 0.8em;
+    color: white;
 
+    align-items: center;
+}
 #menu-wrap {
     display: flex;
     flex-direction: row;
@@ -57,6 +65,11 @@ nav, .nav {
     /* background-color: aquamarine; */
 }
 
+.logo-sub{
+    display: flex;
+    flex-direction: column;
+
+}
 a {
     text-decoration: none;
     color: black;
