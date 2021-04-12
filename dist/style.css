@@ -46,13 +46,14 @@ nav, .nav {
     display: flex;
     justify-content: center;
 }
+
 #school-branch {
     display: flex;
     font-size: 0.8em;
     color: white;
-
     align-items: center;
 }
+
 #menu-wrap {
     display: flex;
     flex-direction: row;
@@ -65,11 +66,11 @@ nav, .nav {
     /* background-color: aquamarine; */
 }
 
-.logo-sub{
+.logo-sub {
     display: flex;
     flex-direction: column;
-
 }
+
 a {
     text-decoration: none;
     color: black;
@@ -95,10 +96,12 @@ a {
     color: white;
     font-weight: bold;
 }
+
 #btn-contact a {
     color: white;
     font-weight: bold;
 }
+
 #btn-only-students {
     background-color: rgb(255, 93, 110, 1);
     padding: 5px 10px;
@@ -106,10 +109,11 @@ a {
     font-size: 0.8em;
     display: flex;
 }
-#btn-only-students > a {
 
-text-align: center;
+#btn-only-students>a {
+    text-align: center;
 }
+
 /* about */
 
 #about-container-laptop {
@@ -151,7 +155,7 @@ text-align: center;
 
 #about-right {
     width: 60%;
-    padding:5% 3%;
+    padding: 5% 3%;
     justify-content: space-evenly;
 }
 
@@ -186,7 +190,7 @@ text-align: center;
 .schedule-container {
     display: flex;
     flex-direction: row;
-    padding: 15% 0 30px 20px;
+    padding: 15% 0 15% 20px;
 }
 
 .grid-container {
@@ -396,15 +400,15 @@ text-align: center;
 }
 
 .schedule-detail {
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
     width: 40%;
     padding-left: 40px;
 }
+
 .schedule-detail h1 {
     margin-bottom: 50%;
-    }
-
+}
 
 @media only screen and (max-width: 800px) {
     .schedule-title>p {
@@ -431,10 +435,26 @@ flex-direction: column;
     }
 }
 
- /*price */
+/*price */
+
 #price-container-laptop {
     /* background-color: burlywood; */
-    height: 100vh;
+    height: fit-content;
+}
+
+#pricetitle {
+    background-color: #2EB872;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#price {
+    text-align: center;
+}
+#pricetitle>img {
+    height: 3em;
 }
 
 .price-box {
@@ -447,7 +467,8 @@ flex-direction: column;
     position: relative;
     height: 400px;
     width: 28%;
-    margin-top: 10%;
+    margin-top: 20%;
+    margin-bottom: 20%;
     border-radius: 2em;
 }
 
