@@ -166,6 +166,22 @@ a {
     padding: 5% 0;
 }
 
+/* 3boxes-wrap */
+
+#wrap-3boxes {
+    background-color: lightcoral;
+    display: flex;
+    flex-direction: row;
+}
+
+.box {
+    background-color: lightgreen;
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    min-height: 25vw;
+}
+
 /* schedule */
 
 .schedule {
@@ -450,9 +466,11 @@ a {
     justify-content: center;
     align-items: center;
 }
+
 #price {
     text-align: center;
 }
+
 #pricetitle>img {
     height: 3em;
 }
