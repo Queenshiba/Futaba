@@ -233,19 +233,21 @@ a {
 }
 
 /* map */
-.map-container {
+.map {
     display: flex;      
     flex-direction: row;  
     /* justify-content: center; */
     align-items: center;
     height: 80vh;
-    background-color: antiquewhite;
-}
-.map-detail {
-    background-image: url(/dist/img/matsugaoka-park.jpg);
+    /* background-color: antiquewhite; */
+        background-image: url(/dist/img/matsugaoka-park.jpg);
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: center;
-    height: 80%;
+}
+.map-detail {
+    color: white;
+    background-color: rgb(46, 184, 114, 1);
+    height: 60%;
     width: 50%;
 }
