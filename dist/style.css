@@ -245,12 +245,19 @@ a {
     background-repeat: no-repeat;
     background-position: center;
 }
-.map-detail {
+.map-container {
     background-color: white;
     /* border: 5px solid rgb(46, 184, 114, 1); */
-    height: 60%;
+    height: 40%;
     width: 40%;
 
+}
+.map-detail-container {
+    display: flex;
+    flex-direction: row;
+}
+.map-detail-container > img{
+    height: 40px;
 }
 #maps{
     background-color: tomato;
