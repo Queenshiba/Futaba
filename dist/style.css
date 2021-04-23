@@ -255,6 +255,7 @@ a {
 .map-detail-container {
     display: flex;
     flex-direction: row;
+    margin-left: 10%;
 }
 .map-detail-container > img{
     height: 40px;
@@ -263,4 +264,16 @@ a {
     background-color: tomato;
     height: 40%;
     width: 30%;
+}
+
+.footer {
+    background-color: #2EB872;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer img {
+    height: 100px;
 }
