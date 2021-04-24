@@ -182,85 +182,105 @@ a {
     height: 30vw;
     background-size: auto 100%;
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center;
     box-shadow: 10px 1px 25px gray;
     color: white;
-    
 }
+
 .box:hover {
     opacity: 0.9;
 }
+
 .detail-btn {
     height: 50px;
-    
 }
-.box a{
+
+.box a {
     color: white;
 }
+
 #box1 {
     background-image: url(/dist/img/schedule.jpg);
-    display: flex;      
-    flex-direction: column;  
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 #box2 {
     background-image: url(/dist/img/price.jpg);
-    display: flex;      
-    flex-direction: column;  
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 #box3 {
     background-image: url(/dist/img/events.jpg);
-    display: flex;      
-    flex-direction: column;  
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .title-wrap {
-    display: flex;      
-    flex-direction: column;  
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.title-wrap img{
+
+.title-wrap img {
     height: 60px;
     padding: 30px;
 }
 
 /* map */
+
 .map {
-    display: flex;      
-    flex-direction: row;  
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 80vh;
     /* background-color: antiquewhite; */
-        background-image: url(/dist/img/matsugaoka-park.jpg);
+    background-image: url(/dist/img/matsugaoka-park.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
 }
-.map-container {
-    background-color: white;
-    /* border: 5px solid rgb(46, 184, 114, 1); */
-    height: 40%;
-    width: 40%;
+
+.map-container {    
+    display: flex;
+    flex-direction: row;
 
 }
+
+.map-container>p {
+    padding: 0 40px;
+}
+
+/* #map-adreess {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+} */
+
 .map-detail-container {
     display: flex;
     flex-direction: row;
     margin-left: 10%;
 }
-.map-detail-container > img{
+
+.map-detail-container>img {
     height: 40px;
 }
-#maps{
+.map-wrap {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+#maps {
     background-color: tomato;
     height: 40%;
     width: 30%;
@@ -274,6 +294,11 @@ a {
     justify-content: center;
     align-items: center;
 }
+
 footer img {
     height: 100px;
+}
+
+#map-phone img {
+    padding: 0 8px;
 }
