@@ -253,6 +253,9 @@ a {
 .map-container {    
     display: flex;
     flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -260,29 +263,29 @@ a {
     padding: 0 40px;
 }
 
-/* #map-adreess {
-    display: flex;
-    flex-direction: column;
-    background-color: aqua;
-} */
 
-.map-detail-container {
-    display: flex;
-    flex-direction: row;
-    margin-left: 10%;
-}
-
-.map-detail-container>img {
-    height: 40px;
-}
 .map-wrap {
     display: flex;
     flex-direction: column;
     background-color: white;
+    width: 50%;
 }
+.map-detail-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10%;
+    padding: 3% 0;
+}
+
+.map-detail-container > img {
+    height: 40px;
+
+}
+
 #maps {
     background-color: tomato;
-    height: 40%;
+    height: 100%;
     width: 30%;
 }
 
