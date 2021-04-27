@@ -1,6 +1,9 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Kiwi Maru', serif;
+    /* font-family: 'M PLUS Rounded 1c', sans-serif; */
+
 }
 
 /* landing page */
@@ -11,6 +14,7 @@
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: center;
+
 }
 
 #logo-wrap {
@@ -117,6 +121,8 @@ a {
 /* about */
 
 #about-container-laptop {
+    font-family: 'Kiwi Maru', serif;
+
     display: flex;
     flex-direction: row;
     background-color: rgb(46, 184, 114, 1);
@@ -169,6 +175,7 @@ a {
 /* 3boxes-wrap */
 
 #wrap-3boxes {
+    
     display: flex;
     flex-direction: row;
     padding: 50px 0;
@@ -250,19 +257,17 @@ a {
     background-position: center;
 }
 
-.map-container {    
+.map-container {
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: center;
     align-items: center;
-
 }
 
 .map-container>p {
     padding: 0 40px;
 }
-
 
 .map-wrap {
     display: flex;
@@ -270,6 +275,7 @@ a {
     background-color: white;
     width: 50%;
 }
+
 .map-detail-container {
     display: flex;
     flex-direction: row;
@@ -278,9 +284,8 @@ a {
     padding: 3% 0;
 }
 
-.map-detail-container > img {
+.map-detail-container>img {
     height: 40px;
-
 }
 
 #maps {
@@ -289,9 +294,15 @@ a {
     width: 30%;
 }
 
-.footer {
+#map-phone img {
+    padding: 0 8px;
+}
+
+/* footer */
+
+.footer-container {
     background-color: #2EB872;
-    height: 30vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -299,9 +310,28 @@ a {
 }
 
 footer img {
-    height: 70px;
+    height: 40px;
+    padding: 20px 0;
 }
 
-#map-phone img {
-    padding: 0 8px;
+.sitemaps-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-container a {
+    color: white;
+    padding: 0 1em;
+    text-decoration: underline;
+}
+
+.copyright-wrap {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(43, 161, 102);
+    width: 100%;
+    padding: 30px;
 }
