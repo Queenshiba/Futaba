@@ -1,8 +1,77 @@
 * {
-    padding:none;
-    margin: none;
+    padding: 0;
+    margin: 0;
     font-family: 'Kiwi Maru', serif;
 }
+
+/* nav */
+
+#logo-wrap {
+    font-size: 1.8em;
+    font-weight: bold;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+#futaba-logo {
+    height: 40px;
+    padding: 0 1%;
+}
+
+nav {
+    height: 80px;
+    box-shadow: -3px 23px 52px -26px rgba(0,0,0,0.35);
+}
+
+nav, .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: black;
+    font-weight: 400;
+    background-color: white;
+    
+}
+
+.green {
+    width: 100%;
+    max-height: 3%;
+    background-color: rgb(46, 184, 114, 1);
+    display: flex;
+    justify-content: center;
+}
+
+#school-branch {
+    display: flex;
+    font-size: 0.8em;
+    color: white;
+    align-items: center;
+}
+
+#menu-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: auto;
+    padding: 0 2%;
+    width: 30%;
+    font-size: 1em;
+    /* background-color: aquamarine; */
+}
+
+.logo-sub {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
 
 /* schedule */
 

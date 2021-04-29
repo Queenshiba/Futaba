@@ -32,6 +32,7 @@
 
 nav {
     height: 80px;
+    box-shadow: -3px 23px 52px -26px rgba(0,0,0,0.75);
 }
 
 nav, .nav {
@@ -129,7 +130,7 @@ a {
     background-color: rgb(46, 184, 114, 1);
     color: white;
     margin-top: 15vh;
-    height: 60vh;
+    height: max-content;
 }
 
 .wrap {
@@ -176,16 +177,14 @@ a {
 /* 3boxes-wrap */
 
 #wrap-3boxes {
-    
     display: flex;
     flex-direction: row;
     padding: 50px 0;
-    margin-top: 15vh;
+    height: max-content;
     justify-content: space-evenly;
 }
 
 .box {
-    /* background-color: lightgreen; */
     width: 30vw;
     height: 30vw;
     background-size: auto 100%;
@@ -250,7 +249,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    height: 70vh;
     /* background-color: antiquewhite; */
     background-image: url(/dist/img/matsugaoka-park.jpg);
     background-size: 100% auto;
@@ -270,6 +269,8 @@ a {
     width: 100%;
     justify-content: center;
     align-items: center;
+    height: max-content;
+    margin-bottom: 5%;
 }
 
 .map-container>p {
@@ -280,7 +281,7 @@ a {
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 50%;
+    width: 40%;
     padding: 40px 0;
 }
 .map-detail-wrap {
@@ -300,7 +301,7 @@ a {
 
 #maps {
     background-color: tomato;
-    height: 100%;
+    height: max-content;
     width: 30%;
 }
 
