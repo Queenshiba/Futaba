@@ -71,7 +71,17 @@ a {
     color: black;
 }
 
+#btn-only-students {
+    background-color: rgb(255, 93, 110, 1);
+    padding: 5px 10px;
+    border-radius: 0.5em;
+    font-size: 0.8em;
+    display: flex;
+}
 
+#btn-only-students>a {
+    text-align: center;
+}
 
 /* schedule */
 
@@ -80,13 +90,12 @@ a {
     display: flex;
     flex-direction: column;
     height: auto;
+    
 }
 
-.schedule-title {
-    color: rgb(46, 184, 114, 1);
-    height: 200px;
-    display: flex;
-    justify-content: center;
+.schedule > h1 {
+text-align: center;
+margin-top: 5%;
 }
 
 .schedule-title>p {
@@ -97,19 +106,20 @@ a {
 .schedule-container {
     display: flex;
     flex-direction: row;
-    padding: 15% 0 15% 20px;
+    padding: 5% 0 20% 20px;
 }
 
 .grid-container {
     font-size: 1em;
     display: grid;
     /* height: 90%; */
-    width: 70%;
+    width: 50%;
+    max-width: 700px;
     margin: 0 auto;
     column-gap: 2px;
     row-gap: 4px;
     background: rgba(190, 191, 192, 0.11);
-    grid-template-columns: 0.7fr 1fr 0.5fr 0.5fr 1fr 0.5fr;
+    grid-template-columns: 0.5fr 1fr 0.5fr 0.5fr 1fr 0.5fr;
     grid-template-rows: 70px 80px 80px 100px 100px 100px 100px;
 }
 
@@ -360,6 +370,7 @@ a {
 
 #price {
     text-align: center;
+    margin: 5% 0;
 }
 
 #pricetitle>img {
@@ -376,7 +387,7 @@ a {
     position: relative;
     height: 400px;
     width: 28%;
-    margin-top: 20%;
+    margin-top: 5%;
     margin-bottom: 20%;
     border-radius: 2em;
 }
@@ -427,10 +438,10 @@ a {
     font-size: 2em;
 }
 
-.yearlytimeline-detail {
-    /* font-size: small */
-} 
-
+.yearlytimeline-detail{
+    height: max-content;
+    margin-bottom: 10%;
+}
 .yearlytimeline-detail>p {
     display: flex;
     margin: auto 0;
