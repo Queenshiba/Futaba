@@ -93,7 +93,7 @@ a {
     
 }
 
-.schedule > h1 {
+.menu {
 text-align: center;
 margin-top: 5%;
 }
@@ -499,7 +499,6 @@ margin-top: 5%;
     width: 300px;
     position: relative;
     box-shadow: -1px 3px 14px -1px rgba(150, 150, 150, 0.5);
-\
 }
 
 
