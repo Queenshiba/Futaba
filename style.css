@@ -1,0 +1,348 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Kiwi Maru', serif;
+    /* font-family: 'M PLUS Rounded 1c', sans-serif; */
+
+}
+
+/* landing page */
+
+#lp-container-laptop {
+    height: 90vh;
+    background-image: url(/dist/img/futaba-lp.jpg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+#logo-wrap {
+    font-size: 1.8em;
+    font-weight: bold;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+#futaba-logo {
+    height: 40px;
+    padding: 0 1%;
+}
+
+nav {
+    height: 80px;
+    box-shadow: -3px 23px 52px -26px rgba(0,0,0,0.75);
+}
+
+nav, .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: black;
+    font-weight: 400;
+    background-color: white;
+}
+
+.green {
+    width: 100%;
+    max-height: 3%;
+    background-color: rgb(46, 184, 114, 1);
+    display: flex;
+    justify-content: center;
+}
+
+#school-branch {
+    display: flex;
+    font-size: 0.8em;
+    color: white;
+    align-items: center;
+}
+
+#menu-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: auto;
+    padding: 0 2%;
+    width: 30%;
+    font-size: 1em;
+    /* background-color: aquamarine; */
+}
+
+.logo-sub {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#main-container {
+    /* background-color: cadetblue; */
+    width: 40%;
+    margin-left: auto;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+#btn-contact {
+    background-color: #2EB872;
+    text-align: center;
+    padding: 10px;
+    width: 120px;
+    border-radius: 0.5em;
+    color: white;
+    font-weight: bold;
+    margin-top: 10%;
+}
+
+#btn-contact a {
+    color: white;
+    font-weight: bold;
+}
+
+#btn-only-students {
+    background-color: rgb(255, 93, 110, 1);
+    padding: 5px 10px;
+    border-radius: 0.5em;
+    font-size: 0.8em;
+    display: flex;
+}
+
+#btn-only-students>a {
+    text-align: center;
+}
+
+/* about */
+
+#about-container-laptop {
+    font-family: 'Kiwi Maru', serif;
+
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(46, 184, 114, 1);
+    color: white;
+    margin-top: 15vh;
+    height: max-content;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-container-laptop img {
+    height: 60px;
+    padding: 5% 5% 5% 0;
+}
+
+#about-left {
+    width: 40%;
+    border-right: 5px solid white;
+    padding: 10% 3% 0 0;
+}
+
+#about-left>h1 {
+    margin-left: auto;
+}
+
+#about-left>h2 {
+    font-size: 1em;
+    margin-left: auto;
+}
+
+#about-right {
+    width: 60%;
+    padding: 5% 3%;
+    justify-content: space-evenly;
+}
+
+.section {
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    padding: 5% 0;
+}
+
+/* 3boxes-wrap */
+
+#wrap-3boxes {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 0;
+    height: max-content;
+    justify-content: space-evenly;
+}
+
+.box {
+    width: 30vw;
+    height: 30vw;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 10px 1px 25px gray;
+    color: white;
+}
+
+.box:hover {
+    opacity: 0.9;
+}
+
+.detail-btn {
+    height: 50px;
+}
+
+.box a {
+    color: white;
+}
+
+#box1 {
+    background-image: url(/dist/img/schedule.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#box2 {
+    background-image: url(/dist/img/price.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#box3 {
+    background-image: url(/dist/img/events.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-wrap img {
+    height: 60px;
+    padding: 30px;
+}
+
+/* map */
+
+.map {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    /* background-color: antiquewhite; */
+    background-image: url(/dist/img/matsugaoka-park.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.map-titles {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.map-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    margin-bottom: 5%;
+}
+
+.map-container>p {
+    padding: 0 40px;
+}
+
+.map-wrap {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 40%;
+    padding: 40px 0;
+}
+.map-detail-wrap {
+    padding-left: 40px
+}
+.map-detail-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10%;
+    padding: 3% 0;
+}
+
+.map-detail-container>img {
+    height: 40px;
+}
+
+#maps {
+    background-color: tomato;
+    height: max-content;
+    width: 30%;
+}
+
+#map-phone img {
+    padding: 0 8px;
+}
+
+/* footer */
+
+.footer-container {
+    background-color: #2EB872;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    height: 40px;
+    padding: 20px 0;
+}
+
+.sitemaps-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-container a {
+    color: white;
+    padding: 0 1em;
+    text-decoration: underline;
+}
+
+.copyright-wrap {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(43, 161, 102);
+    width: 100%;
+    padding: 30px;
+}

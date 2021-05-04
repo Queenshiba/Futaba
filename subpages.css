@@ -1,0 +1,891 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Kiwi Maru', serif;
+}
+
+/* nav */
+
+#logo-wrap {
+    font-size: 1.8em;
+    font-weight: bold;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+#futaba-logo {
+    height: 40px;
+    padding: 0 1%;
+}
+
+nav {
+    height: 80px;
+    box-shadow: -3px 23px 52px -26px rgba(0,0,0,0.35);
+}
+
+nav, .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: black;
+    font-weight: 400;
+    background-color: white;
+    
+}
+
+.green {
+    width: 100%;
+    max-height: 3%;
+    background-color: rgb(46, 184, 114, 1);
+    display: flex;
+    justify-content: center;
+}
+
+#school-branch {
+    display: flex;
+    font-size: 0.8em;
+    color: white;
+    align-items: center;
+}
+
+#menu-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: auto;
+    padding: 0 2%;
+    width: 30%;
+    font-size: 1em;
+    /* background-color: aquamarine; */
+}
+
+.logo-sub {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#btn-only-students {
+    background-color: rgb(255, 93, 110, 1);
+    padding: 5px 10px;
+    border-radius: 0.5em;
+    font-size: 0.8em;
+    display: flex;
+}
+
+#btn-only-students>a {
+    text-align: center;
+}
+
+/* schedule */
+
+.schedule {
+    /* background: red;  */
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    
+}
+
+.menu {
+text-align: center;
+margin-top: 5%;
+}
+
+.schedule-title>p {
+    font-size: 2.5em;
+    line-height: 200px;
+}
+
+.schedule-container {
+    display: flex;
+    flex-direction: row;
+    padding: 5% 0 20% 20px;
+}
+
+.grid-container {
+    font-size: 1em;
+    display: grid;
+    /* height: 90%; */
+    width: 50%;
+    max-width: 700px;
+    margin: 0 auto;
+    column-gap: 2px;
+    row-gap: 4px;
+    background: rgba(190, 191, 192, 0.11);
+    grid-template-columns: 0.5fr 1fr 0.5fr 0.5fr 1fr 0.5fr;
+    grid-template-rows: 70px 80px 80px 100px 100px 100px 100px;
+}
+
+.grid-container div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.emp {
+    grid-area: 1 / 1 / 2 / 2;
+    color: transparent;
+    background: rgb(46, 184, 114, 0.8);
+}
+
+.Mon {
+    grid-area: 1 / 2 / 2 / 3;
+    background: rgb(46, 184, 114, 0.8);
+    color: white;
+    font-size: 2em;
+}
+
+.MonEmp {
+    grid-area: 2 / 2 / 8 / 3;
+    background: rgba(190, 191, 192, 0.21);
+}
+
+.Tue {
+    grid-area: 1 / 3 / 2 / 4;
+    background: rgb(46, 184, 114, 0.4);
+    color: white;
+    font-size: 2em;
+}
+
+.TueEmp {
+    grid-area: 2 / 3 / 8 / 4;
+    background: rgba(190, 191, 192, 0.21);
+    /* color: transparent; */
+    writing-mode: vertical-rl;
+}
+
+.Wed {
+    grid-area: 1 / 4 / 2 / 5;
+    background: rgb(46, 184, 114, 0.4);
+    color: white;
+    font-size: 2em;
+}
+
+.WedEmp {
+    grid-area: 2 / 4 / 8 / 5;
+    background: rgba(190, 191, 192, 0.21);
+    /* color: transparent; */
+    writing-mode: vertical-rl;
+}
+
+.Thur {
+    grid-area: 1 / 5 / 2 / 6;
+    background: rgb(46, 184, 114, 0.8);
+    color: white;
+    font-size: 2em;
+}
+
+.ThurEmp {
+    grid-area: 2 / 5 / 8 / 6;
+    background: rgba(190, 191, 192, 0.21);
+}
+
+.Fri {
+    grid-area: 1 / 6 / 2 / 7;
+    background: rgb(46, 184, 114, 0.4);
+    color: white;
+    font-size: 2em;
+}
+
+.FriEmp {
+    grid-area: 2 / 6 / 8 / 7;
+    background: rgba(190, 191, 192, 0.21);
+    /* color: transparent; */
+    writing-mode: vertical-rl;
+}
+
+.Sat {
+    grid-area: 1 / 7 / 2 / 8;
+    background: rgb(46, 184, 114, 0.4);
+    color: white;
+    font-size: 2em;
+}
+
+.SatEmp {
+    grid-area: 2 / 7 / 8 / 8;
+    background: rgba(190, 191, 192, 1);
+    writing-mode: vertical-rl;
+}
+
+.time1 {
+    grid-area: 2 / 1 / 3 / 2;
+    background: rgb(46, 184, 114, 0.1);
+}
+
+.time2 {
+    grid-area: 3 / 1 / 4 / 2;
+    background: rgb(46, 184, 114, 0.3);
+}
+
+.time3 {
+    grid-area: 4 / 1 / 5 / 2;
+    background: rgb(46, 184, 114, 0.1);
+}
+
+.time4 {
+    grid-area: 5 / 1 / 6 / 2;
+    background: rgb(46, 184, 114, 0.3);
+}
+
+.time5 {
+    grid-area: 6 / 1 / 7 / 2;
+    background: rgb(46, 184, 114, 0.1);
+}
+
+.time6 {
+    grid-area: 7 / 1 / 8 / 2;
+    background: rgb(46, 184, 114, 0.3);
+}
+
+/* .class1 {
+    grid-area: 2 / 7 / 3 / 8;
+    background: rgb(255, 93, 110, 0.88);
+    border-radius: 15px;
+    color: #FFF;
+}
+
+.class2 {
+    grid-area: 3 / 7 / 4 / 8;
+    background: rgb(255, 93, 110, 0.88);
+    border-radius: 15px;
+    color: #FFF;
+} */
+
+.class3 {
+    grid-area: 4 / 2 / 5 / 3;
+    background: rgb(255, 93, 110, 0.88);
+    border-radius: 15px;
+    color: #FFF;
+}
+
+.class4 {
+    grid-area: 5 / 2 / 6 / 3;
+    background: rgb(255, 93, 110, 0.88);
+    border-radius: 15px;
+    color: #FFF;
+}
+
+.class5 {
+    grid-area: 6 / 2 / 7 / 3;
+    background: rgb(255, 93, 110, 0.88);
+    border-radius: 15px;
+    color: #FFF;
+}
+
+.class6 {
+    grid-area: 7 / 2 / 8 / 3;
+    background: rgb(255, 93, 110, 0.88);
+    border-radius: 15px;
+    color: #FFF;
+}
+
+.class7 {
+    grid-area: 4 / 5 / 5 / 6;
+    background: rgb(255, 93, 110, 0.88);
+    border-radius: 15px;
+    color: #FFF;
+}
+
+.class8 {
+    grid-area: 5 / 5 / 6 / 6;
+    background: rgb(255, 93, 110, 0.88);
+    border-radius: 15px;
+    color: #FFF;
+}
+
+.class9 {
+    grid-area: 6 / 5 / 7 / 6;
+    background: rgb(255, 93, 110, 0.88);
+    border-radius: 15px;
+    color: #FFF;
+}
+
+.class10 {
+    grid-area: 7 / 5 / 8 / 6;
+    background: rgb(255, 93, 110, 0.88);
+    border-radius: 15px;
+    color: #FFF;
+}
+
+.schedule-detail {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding-left: 40px;
+}
+
+.schedule-detail h1 {
+    margin-bottom: 50%;
+}
+
+@media only screen and (max-width: 800px) {
+    .schedule-title>p {
+        font-size: 2em;
+    }
+    .schedule-container {
+        display: flex;
+        flex-direction: column;
+        padding-left: 5px;
+    }
+    .grid-container {
+        height: auto;
+        width: 95%;
+    }
+    .schedule-title {
+        font-size: 1.2em;
+        padding: 50px;
+    }
+    .schedule-detail {
+        display: flex;
+        flex-direction: column;
+        padding: 100px 20px 100px 20px;
+        width: 100%;
+    }
+}
+
+/*price */
+
+#price-container-laptop {
+    background-color: lightbgray;
+    height: fit-content;
+}
+
+#pricetitle {
+    background-color: #2EB872;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#price {
+    text-align: center;
+    margin: 5% 0;
+}
+
+#pricetitle>img {
+    height: 3em;
+}
+
+.price-box {
+    border: rgb(46, 184, 114, 1.0) solid 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 2%;
+    position: relative;
+    height: 400px;
+    width: 28%;
+    margin-top: 5%;
+    margin-bottom: 20%;
+    border-radius: 2em;
+}
+
+.wrap-price-boxes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+    background-color: rgb(255, 93, 110, 1);
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: -10%;
+}
+
+.price-detail {
+    padding: 0 5%;
+}
+
+/* events schedule */
+
+
+.yearlytimeline {
+    padding-bottom: 40px;
+}
+
+.yearlytimeline-title {
+    background: #2EB872;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+}
+
+.yearlytimeline-title>p {
+    display: flex;
+    margin: auto 0;
+    color: white;
+    font-size: 2em;
+}
+
+.yearlytimeline-detail{
+    height: max-content;
+    margin-bottom: 10%;
+}
+.yearlytimeline-detail>p {
+    display: flex;
+    margin: auto 0;
+}
+
+@media only screen and (max-width: 500px) {
+    .yearlytimeline-title {
+        height: 150px;
+    }
+}
+
+.contents-names {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+}
+
+.contents-names p {
+    margin: auto;
+    font-size: 1.8em;
+}
+
+.bar {
+    background: #A4DBB8;
+    position: absolute;
+    left: 50%;
+    width: 5px;
+    height: 1500px;
+    z-index: -1;
+    box-shadow: -1px 6px 14px -4px rgba(115, 114, 115, 1);
+}
+
+.tag {
+    font-size: 0.7em;
+    text-decoration: underline;
+    padding-left: 10px;
+}
+
+.container-left {
+    /* background: yellow; */
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+.box {
+    display: flex;
+    flex-direction: row;
+    /* background: lightsalmon; */
+    margin: 0 auto;
+}
+
+.comment-left {
+    background: rgb(255, 243, 142, 0.7);
+    height: 50px;
+    width: 300px;
+    position: relative;
+    box-shadow: -1px 3px 14px -1px rgba(150, 150, 150, 0.5);
+}
+
+
+.timeline-content {
+    text-align: center;
+}
+
+.month {
+    background: #68C78E;
+    width: 60px;
+    height: 60px;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+    color: white;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: -1px 6px 14px -4px rgba(115, 114, 115, 0.5);
+    z-index: 1;
+    font-size: 1.2em;
+}
+
+.triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 20px solid rgb(255, 243, 142, 0.5);
+    margin-right: auto;
+    z-index: 1;
+}
+
+.timeline-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.container-right {
+    /* background: pink; */
+    width: 50%;
+    margin-left: 50%;
+    display: flex;
+    flex-direction: row;
+    padding-top: -30px;
+}
+
+#end {
+    padding-top: 10px;
+}
+
+.comment-right {
+    color: #FFF;
+    background: rgba(255, 112, 126, 0.7);
+    height: 50px;
+    width: 300px;
+    position: relative;
+    box-shadow: -1px 3px 14px -4px rgba(150, 150, 150, 0.5);
+    z-index: -1;
+}
+
+.triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-right: 20px solid rgba(255, 112, 126, 0.7);
+    z-index: 1;
+}
+
+.timeline-img-container img {
+    width: auto;
+    position: absolute;
+}
+
+.timeline-img-container {
+    display: flex;
+    width: 100%;
+}
+
+.timeline-img-container div {
+    position: relative;
+    margin: 0 auto;
+}
+
+/* spring img */
+
+.setsubun {
+    margin-left: 80%;
+    height: 90px;
+}
+
+.ladybird {
+    margin-left: 65%;
+    height: 40px;
+}
+
+.spring {
+    height: 80px;
+    margin-left: 70%;
+}
+
+.sakura {
+    height: 80px;
+    margin-left: 18%;
+}
+
+.sakura1 {
+    height: 50px;
+    margin-left: 25%;
+}
+
+.koiobori {
+    height: 90px;
+    margin-left: 80%;
+}
+
+.ajisai {
+    height: 70px;
+    margin-left: 65%;
+    z-index: -1;
+}
+
+.snail {
+    height: 40px;
+    margin-left: 71%;
+}
+
+/* summer img */
+
+.homework {
+    height: 70px;
+    margin-left: 65%;
+}
+
+.sun-umbrella {
+    height: 70px;
+    margin-left: 80%;
+}
+
+.sun {
+    height: 60px;
+    margin-left: 20%;
+}
+
+.sunflower1 {
+    height: 60px;
+    margin-left: 16%;
+}
+
+.sunflower2 {
+    height: 63px;
+    margin-left: 20%;
+    z-index: 1;
+}
+
+.sunflower3 {
+    height: 60px;
+    margin-left: 24%;
+}
+
+.mushiami {
+    height: 45px;
+    margin-left: 30%;
+}
+
+/* autumn img */
+
+.dragonfly {
+    height: 80px;
+    margin-left: 70%;
+}
+
+.susuki {
+    height: 80px;
+    margin-left: 80%;
+}
+
+/* winter img */
+
+.snowman {
+    height: 70px;
+    margin-left: 70%;
+}
+
+.tree {
+    height: 70px;
+    margin-left: 75%;
+}
+
+.snowflake1 {
+    height: 28px;
+    margin-left: 22%;
+}
+
+.snowflake2 {
+    height: 40px;
+    margin-left: 25%;
+}
+
+.snowflake3 {
+    height: 20px;
+    margin-left: 29%;
+}
+
+.hagoita {
+    height: 70px;
+    margin-left: 28%;
+}
+
+.kadomatsu {
+    height: 80px;
+    margin-left: 20%;
+}
+
+.note {
+    font-size: 0.8em;
+    text-align: center;
+}
+
+@media only screen and (min-width: 800px) {
+    .sunflower1-m, .sunflower2-m, .sunflower3-m, .mushiami-m, .tag {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .bar {
+        position: absolute;
+        left: 10%;
+        height: 1900px;
+    }
+    .month {
+        width: 60px;
+        height: 60px;
+        -moz-border-radius: 60px;
+        -webkit-border-radius: 60px;
+        border-radius: 60px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 60px;
+        font-size: 1em;
+        position: relative;
+    }
+    .timeline-img-container {
+        width: 20%;
+    }
+    .contents-names {
+        height: 50px;
+    }
+    .contents-names p {
+        display: none;
+    }
+    .triangle-right {
+        display: none;
+    }
+    .triangle-left-hidden {
+        width: 0;
+        height: 0;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        border-right: 20px solid rgb(255, 243, 142, 0.5);
+        z-index: 1;
+    }
+    .container-right {
+        margin-left: 10%;
+        padding: 10px 0;
+        padding-right: 10px;
+    }
+    .container-left {
+        padding: 5px 0;
+        margin-left: 10%;
+        padding: 10px 0;
+        padding-right: 10px;
+    }
+    /* spring img */
+    .setsubun {
+        margin-left: 60%;
+        height: 70px;
+        z-index: 1;
+    }
+    .ladybird {
+        margin-left: 35%;
+        height: 20px;
+    }
+    .spring {
+        height: 60px;
+        margin-left: 40%;
+        z-index: 1;
+    }
+    .sakura {
+        height: 60px;
+        margin-left: 25%;
+    }
+    .sakura1 {
+        height: 30px;
+        margin-left: 35%;
+    }
+    .koiobori {
+        height: 50px;
+        margin-left: 70%;
+    }
+    .ajisai {
+        height: 50px;
+        margin-left: 35%;
+        z-index: -1;
+    }
+    .snail {
+        height: 20px;
+        margin-left: 50%;
+    }
+    /* summer img */
+    .homework {
+        height: 40px;
+        margin-left: 25%;
+    }
+    .sun-umbrella {
+        height: 70px;
+        margin-left: 65%;
+        z-index: 1;
+    }
+    .sun {
+        display: none;
+    }
+    .sunflower1, .sunflower2, .sunflower3, .mushiami {
+        display: none;
+    }
+    .sunflower1-m {
+        height: 46px;
+        margin-left: 45%;
+    }
+    .sunflower2-m {
+        height: 50px;
+        margin-left: 55%;
+        z-index: 1;
+    }
+    .sunflower3-m {
+        height: 46px;
+        margin-left: 65%;
+    }
+    .mushiami-m {
+        height: 40px;
+        margin-left: 75%;
+    }
+    /* autumn img */
+    .dragonfly {
+        height: 70px;
+        margin-left: 55%;
+        z-index: 1;
+    }
+    .susuki {
+        height: 70px;
+        margin-left: 70%;
+        z-index: 1;
+    }
+    /* winter img */
+    .snowman {
+        height: 60px;
+        margin-left: 38%;
+    }
+    .tree {
+        height: 70px;
+        margin-left: 55%;
+    }
+    .snowflake1 {
+        height: 18px;
+        margin-left: 30%;
+    }
+    .snowflake2 {
+        height: 10px;
+        margin-left: 38%;
+    }
+    .snowflake3 {
+        height: 20px;
+        margin-left: 49%;
+    }
+    .hagoita {
+        height: 60px;
+        margin-left: 54%;
+    }
+    .kadomatsu {
+        height: 80px;
+        margin-left: 70%;
+    }
+}
