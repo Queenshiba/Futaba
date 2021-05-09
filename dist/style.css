@@ -12,14 +12,15 @@
     background-image: url(/dist/img/futaba-lp.jpg);
     background-size: auto 100%;
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center;
 }
+
 /* #lp-container-laptop > img {
     height: auto;
     width: 100%;
     position: absolute; */
-/* } */
 
+/* } */
 
 #logo-wrap {
     font-size: 1.8em;
@@ -114,7 +115,7 @@ a {
     font-weight: bold;
 }
 
-#btn-only-students {
+#btn-only-students-lp {
     background-color: rgb(255, 93, 110, 1);
     padding: 5px 10px;
     border-radius: 0.5em;
@@ -122,22 +123,34 @@ a {
     display: flex;
 }
 
-#btn-only-students>a {
+#btn-only-students-lp>a {
     text-align: center;
 }
 
 @media only screen and (max-width: 900px) {
-    .green, nav {
+    #menu-wrap {
         display: none;
+    }
+    #logo-wrap {
+        width: 100%;
     }
     #main-container {
         width: 100%;
         align-items: center;
         font-size: smaller;
     }
+    #btn-only-students-mb {
+        margin-top: 5%;
+        background-color: rgb(255, 93, 110, 1);
+        padding: 5px 20px;
+        border-radius: 0.5em;
+        font-size: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
 }
-
-
 
 /* about */
 
