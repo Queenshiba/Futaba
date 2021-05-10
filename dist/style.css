@@ -128,6 +128,9 @@ a {
 }
 
 @media only screen and (max-width: 900px) {
+    nav {
+        height: 60px;
+    }
     #menu-wrap {
         display: none;
     }
@@ -138,7 +141,9 @@ a {
         width: 100%;
         align-items: center;
         font-size: smaller;
+        height: 90%;
     }
+  
     #btn-only-students-mb {
         margin-top: 5%;
         background-color: rgb(255, 93, 110, 1);
@@ -146,10 +151,12 @@ a {
         border-radius: 0.5em;
         font-size: 1em;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         color: white;
     }
+
 }
 
 /* about */
