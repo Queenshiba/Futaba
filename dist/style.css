@@ -302,13 +302,26 @@ a {
     padding: 30px;
 }
 
+
+@media only screen and (max-width: 900px) {
+    #wrap-3boxes {
+        flex-direction: column;
+    }
+    .box {
+        min-width: 280px;
+        min-height: 280px;
+        margin: 5% auto;
+
+    }
+}
+
 /* map */
 
 .map {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
     height: 70vh;
     /* background-color: antiquewhite; */
     background-image: url(/dist/img/matsugaoka-park.jpg);
@@ -371,6 +384,19 @@ a {
 
 #map-phone img {
     padding: 0 8px;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .map {
+        background-size: auto 100% ;
+    }
+    .map-container {
+        flex-direction: column;
+    }
+    .map-wrap {
+        width: 70%;
+    }
 }
 
 /* footer */
