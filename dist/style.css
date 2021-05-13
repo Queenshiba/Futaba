@@ -397,6 +397,9 @@ a {
     .map-wrap {
         width: 70%;
     }
+    #maps {
+        width: 70%;
+    }
 }
 
 /* footer */
@@ -429,10 +432,17 @@ footer img {
 
 .copyright-wrap {
     color: white;
+    word-wrap: break-word;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(43, 161, 102);
     width: 100%;
     padding: 30px;
+}
+
+@media only screen and (max-width: 900px) {
+    .sitemaps-wrap {
+        flex-direction: column;
+    }
 }
