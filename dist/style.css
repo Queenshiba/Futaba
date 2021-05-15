@@ -324,18 +324,25 @@ a {
     align-items: center; 
     height: 70vh;
     /* background-color: antiquewhite; */
-    background-image: url(/dist/img/matsugaoka-park.jpg);
-    background-size: 100% auto;
+    /* background-image: url(/dist/img/tables.jpg); */
+    /* background-size: 100% auto;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; */
+    position: relative;
 }
-
+.map > img{
+    max-height: 700px;
+    width: fit-content;
+    position: absolute;
+    z-index: 0;
+}
 .map-titles {
     padding: 40px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 .map-container {
@@ -358,6 +365,7 @@ a {
     background-color: white;
     width: 40%;
     padding: 40px 0;
+    z-index: 1;
 }
 
 .map-detail-wrap {
@@ -380,6 +388,7 @@ a {
     background-color: tomato;
     height: max-content;
     width: 30%;
+    z-index: 1;
 }
 
 #map-phone img {
