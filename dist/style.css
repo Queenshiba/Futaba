@@ -19,9 +19,16 @@
 #logo-wrap {
     font-size: 1.8em;
     font-weight: bold;
-    width: 30%;
     display: flex;
-    justify-content: center;
+
+}
+#logo-wrap a{
+    /* background-color: gold; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+
 }
 
 #futaba-logo {
@@ -35,7 +42,7 @@ nav {
     position: relative;
 }
 
-nav, .nav {
+nav {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -72,10 +79,10 @@ nav, .nav {
     /* background-color: aquamarine; */
 }
 
-.logo-sub {
+/* .logo-sub {
     display: flex;
     flex-direction: column;
-}
+} */
 
 a {
     text-decoration: none;
