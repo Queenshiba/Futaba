@@ -15,20 +15,19 @@
     background-position: center;
 }
 
-
 #logo-wrap {
     font-size: 1.8em;
     font-weight: bold;
     display: flex;
-
+    /* background-color: olive; */
 }
-#logo-wrap a{
-    /* background-color: gold; */
+
+#logo-wrap a {
+    background-color: gold;
     width: 100%;
     display: flex;
     flex-direction: row;
     width: fit-content;
-
 }
 
 #futaba-logo {
@@ -78,11 +77,6 @@ nav {
     font-size: 1em;
     /* background-color: aquamarine; */
 }
-
-/* .logo-sub {
-    display: flex;
-    flex-direction: column;
-} */
 
 a {
     text-decoration: none;
@@ -163,6 +157,7 @@ a {
 }
 
 /* hamberger menu */
+
 /* .LP-mobile {
     background: url(./img/futaba-lp.jpg) no-repeat;
     background-size: auto 100vh;
@@ -412,8 +407,6 @@ a {
     }
 }
 
-
-
 /* about */
 
 #about-container-laptop {
@@ -555,7 +548,6 @@ a {
     padding: 30px;
 }
 
-
 @media only screen and (max-width: 900px) {
     #wrap-3boxes {
         flex-direction: column;
@@ -564,7 +556,6 @@ a {
         min-width: 280px;
         min-height: 280px;
         margin: 5% auto;
-
     }
 }
 
@@ -574,7 +565,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     height: 70vh;
     /* background-color: antiquewhite; */
     /* background-image: url(/dist/img/tables.jpg); */
@@ -583,12 +574,14 @@ a {
     background-position: center; */
     position: relative;
 }
-.map > img{
+
+.map>img {
     max-height: 700px;
     width: fit-content;
     position: absolute;
     z-index: 0;
 }
+
 .map-titles {
     padding: 40px 0;
     display: flex;
@@ -648,10 +641,9 @@ a {
     padding: 0 8px;
 }
 
-
 @media only screen and (max-width: 900px) {
     .map {
-        background-size: auto 100% ;
+        background-size: auto 100%;
     }
     .map-container {
         flex-direction: column;
@@ -663,8 +655,8 @@ a {
         width: 80%;
     }
     .map-detail-wrap {
-    font-size: smaller;
-    padding-left: 10px;
+        font-size: smaller;
+        padding-left: 10px;
     }
 }
 

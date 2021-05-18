@@ -9,16 +9,21 @@
 #logo-wrap {
     font-size: 1.8em;
     font-weight: bold;
-    width: 30%;
     display: flex;
-    justify-content: center;
-}
 
+}
+#logo-wrap a{
+    background-color: gold;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+
+}
 #futaba-logo {
     height: 40px;
     padding: 0 1%;
 }
-
 nav {
     height: 80px;
     box-shadow: -3px 23px 52px -26px rgba(0,0,0,0.35);
@@ -111,7 +116,7 @@ a {
         justify-content: center;
         color: white;
     }
-
+}
 /* schedule */
 
 .schedule {
@@ -927,5 +932,4 @@ margin-top: 5%;
         height: 80px;
         margin-left: 70%;
     }
-}
 }
