@@ -13,7 +13,7 @@
 
 }
 #logo-wrap a{
-    background-color: gold;
+    /* background-color: gold; */
     width: 100%;
     display: flex;
     flex-direction: row;

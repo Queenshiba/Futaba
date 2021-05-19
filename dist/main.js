@@ -24,8 +24,6 @@ $(function () {
     });
 
 
-
-
     $('.x').click(function () {
         $('.popup').hide();
         overlay.appendTo(document.body).remove();
