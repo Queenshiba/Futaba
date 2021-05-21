@@ -468,6 +468,9 @@ a {
 }
 
 @media only screen and (max-width: 900px) {
+    .title {
+        font-size: x-large;
+    }
     #about-container-laptop {
         flex-direction: column;
     }
@@ -483,8 +486,13 @@ a {
         width: 90%;
         margin: 0 auto;
     }
-    .title {
-        text-align: center;
+    #about-left>h2  {
+        margin-left: none;
+        margin: 0 auto;
+    }
+    #about-left>h1  {
+        margin-left: none;
+        margin: 0 auto;
     }
 }
 
@@ -563,8 +571,9 @@ a {
     .box {
         min-width: 280px;
         min-height: 280px;
-        margin: 5% auto;
+
     }
+
 }
 
 /* map */
