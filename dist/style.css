@@ -506,6 +506,7 @@ a {
     background-position: center;
     box-shadow: 10px 1px 25px gray;
     color: white;
+    margin: 10% 0;
 }
 
 .box:hover {
@@ -526,6 +527,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10%;
 }
 
 #box2 {
@@ -534,6 +536,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10%;
 }
 
 #box3 {
@@ -542,6 +545,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10%;
 }
 
 .title-wrap {
@@ -574,7 +578,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 700px;
     /* background-color: antiquewhite; */
     /* background-image: url(/dist/img/tables.jpg); */
     /* background-size: 100% auto;
@@ -597,6 +601,7 @@ a {
     justify-content: center;
     align-items: center;
     z-index: 1;
+    color: white;
 }
 
 .map-container {
@@ -641,7 +646,8 @@ a {
 #maps {
     background-color: tomato;
     height: max-content;
-    width: 30%;
+    width: 40%;
+    height: 15em;
     z-index: 1;
 }
 
