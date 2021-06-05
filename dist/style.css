@@ -186,24 +186,6 @@ a {
 }
 
 /* hamberger menu */
-
-/* .LP-mobile {
-    background: url(./img/futaba-lp.jpg) no-repeat;
-    background-size: auto 100vh;
-    height: 90vh;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.LP-mobile>div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 200px;
-    color: white;
-} */
-
 :root {
     --primary-color: rgba(125, 189, 233, 0.95);
     --overlay-color: rgba(21, 52, 115, 0.85);
@@ -213,7 +195,6 @@ a {
 .menu {
     display: flex;
     flex-direction: column;
-    /* background-color: olive; */
 }
 
 .menu a {
@@ -249,7 +230,7 @@ a {
 }
 
 .menu div {
-    padding-top: none;
+    padding-top: 40px;
 }
 
 .menu>div>div {
@@ -284,12 +265,12 @@ a {
 .menu-wrap .hamburger {
     position: absolute;
     top: 0;
-    /* right: 0; */
+    left: 0;
     z-index: 1;
-    width: 40px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     padding: 1rem;
-    background: rgba(51, 45, 45, 0.2);
+    background: rgba(88, 88, 88, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -367,7 +348,7 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    /* height: 100%; */
+    height: 100%;
     visibility: hidden;
     overflow: hidden;
     display: flex;
@@ -376,10 +357,10 @@ a {
 }
 
 .menu-wrap .menu>div {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(47, 184, 114, 0.9);
     /* border-radius: 50%; */
-    width: 100vw;
-    height: 100vw;
+    width: 200vw;
+    height: 200vw;
     display: flex;
     flex: none;
     align-items: center;
