@@ -12,30 +12,30 @@
 //     lpImage = newURL;
 // // })
 
-$(function () {
-    var overlay = $('<div id="overlay"></div>');
-    overlay.show();
-    overlay.appendTo(document.body);
-    $('.popup').show();
-    $('.close').click(function () {
-        $('.popup').hide();
-        overlay.appendTo(document.body).remove();
-        return false;
-    });
+// $(function () {
+//     var overlay = $('<div id="overlay"></div>');
+//     overlay.show();
+//     overlay.appendTo(document.body);
+//     $('.popup').show();
+//     $('.close').click(function () {
+//         $('.popup').hide();
+//         overlay.appendTo(document.body).remove();
+//         return false;
+//     });
 
 
-    $('.x').click(function () {
-        $('.popup').hide();
-        overlay.appendTo(document.body).remove();
-        return false;
-    });
-    $('.jump').click(function () {
-        $(document).scrollTop($("#campaign").offset().top);
-        $('.popup').hide();
-        overlay.appendTo(document.body).remove();
-        return false;
-    });
-});
+//     $('.x').click(function () {
+//         $('.popup').hide();
+//         overlay.appendTo(document.body).remove();
+//         return false;
+//     });
+//     $('.jump').click(function () {
+//         $(document).scrollTop($("#campaign").offset().top);
+//         $('.popup').hide();
+//         overlay.appendTo(document.body).remove();
+//         return false;
+//     });
+// });
 
 const mobileMenu = document.getElementById("mobile-menu");
 const mobileItems = document.getElementById("menu-items");
