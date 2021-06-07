@@ -37,13 +37,31 @@
 //     });
 // });
 
-const mobileMenu = document.getElementById("mobile-menu");
-const mobileItems = document.getElementById("menu-items");
-mobileItems.childNodes.forEach(child => {
-    child.addEventListener("click", () => {
-        mobileMenu.checked = false;
-    })
+let mobileMenuToggler = document.querySelector('input[name=toggler]');
+let menuList = document.getElementById("menu-list");
+
+mobileMenuToggler.addEventListener('change', () => {
+
+    if (mobileMenuToggler.checked) {
+        // console.log("Checkbox is checked..");
+        menuList.style.display=""
+    } else {
+        // console.log("Checkbox is not checked..");
+        menuList.style.display ="none";
+    }
 })
+
+// console.log(mobileMenuToggler)
+
+
+
+// const mobileMenu = document.getElementById("mobile-menu");
+// const mobileItems = document.getElementById("menu-items");
+// mobileItems.childNodes.forEach(child => {
+//     child.addEventListener("click", () => {
+//         mobileMenu.checked = false;
+//     })
+// })
 
 window.onscroll = function () { scrollFunction() };
 // mobileMenu.checked = false;
