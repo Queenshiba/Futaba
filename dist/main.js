@@ -51,17 +51,18 @@ mobileMenuToggler.addEventListener('change', () => {
     }
 })
 
-// console.log(mobileMenuToggler)
+// when click a link, close mobile nav
+
+let links = document.getElementsByTagName('a')
+let menuItems = document.getElementsByClassName("menu-items");
+var show = function() { alert('hahahha'); }
+for (var i = links.length - 1; i >= 0; --i) {
+    menuItems.display = "none"
+}
 
 
 
-// const mobileMenu = document.getElementById("mobile-menu");
-// const mobileItems = document.getElementById("menu-items");
-// mobileItems.childNodes.forEach(child => {
-//     child.addEventListener("click", () => {
-//         mobileMenu.checked = false;
-//     })
-// })
+
 
 window.onscroll = function () { scrollFunction() };
 // mobileMenu.checked = false;
