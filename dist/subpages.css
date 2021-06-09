@@ -156,7 +156,7 @@ a {
     display: flex;
     /* align-items: center; */
     justify-content: center;
-    /* display: none */
+    /* display: none; */
 }
 
 .menu-items {
@@ -252,9 +252,17 @@ a {
 /* title */
 .menu {
     padding-top: 40px ;
+    display: flex;
+    align-items: center;
+justify-content: center;
+/* background-color: yellow; */
 }
-
-
+#price, #titleSchedule{
+    padding-bottom: 10%;
+}
+#price {
+    padding-bottom: 0;
+}
 
 /* schedule */
 
@@ -302,6 +310,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .emp {
@@ -612,7 +621,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     margin: 0 2%;
     position: relative;
     height: 400px;
@@ -621,11 +630,15 @@ a {
     margin-bottom: 20%;
     border-radius: 2em;
 }
+.price-box h2{
+background-color: khaki;
 
+    }
 .wrap-price-boxes {
     display: flex;
     flex-direction: row;
     align-items: center;
+
 }
 
 .circle {
@@ -644,7 +657,7 @@ a {
 }
 
 .price-detail {
-    padding: 0 5%;
+    padding: 10% 5%;
 }
 
 
@@ -726,7 +739,7 @@ a {
     display: flex;
     flex-direction: row;
 }
-.box {
+.square {
     display: flex;
     flex-direction: row;
     /* background: lightsalmon; */

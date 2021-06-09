@@ -51,13 +51,14 @@ mobileMenuToggler.addEventListener('change', () => {
     }
 })
 
+
 // when click a link, close mobile nav
 
 let links = document.getElementsByTagName('a')
 let menuItems = document.getElementsByClassName("menu-items");
 var show = function() { alert('hahahha'); }
 for (var i = links.length - 1; i >= 0; --i) {
-    menuItems.display = "none"
+    menuList.style.display ="none";
 }
 
 
