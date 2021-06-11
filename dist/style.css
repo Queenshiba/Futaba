@@ -147,10 +147,16 @@ a {
 
 #btn-only-students-lp>a {
     text-align: center;
+    color: white;
 }
 
 #btn-only-students-mb {
     display: none;
+    text-align: center;
+}
+
+#btn-only-students-mb a {
+    color: white;
 }
 
 @media only screen and (max-width: 900px) {
@@ -530,7 +536,6 @@ a {
     justify-content: center;
     align-items: center;
     height: max-content;
-
 }
 
 .map-container>p {
@@ -573,7 +578,6 @@ a {
 
 #map-phone img {
     padding: 0 8px;
-
 }
 
 @media only screen and (max-width: 900px) {
