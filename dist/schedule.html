@@ -11,6 +11,8 @@
     <title>時間割</title>
 </head>
 <body>
+    <button onclick=" topFunction()" id="myBtn" title="Go to top"><img class="arrow" src="/img/gototop.png"
+            alt="">Topに戻る</button>
     <div class="green">
         <p id="school-branch">伊丹珠算振興会　松ヶ丘教場</p>
     </div>
@@ -35,41 +37,80 @@
             <a href="index.html#access">アクセス</a>
             <div id="btn-only-students-lp"><a href="#">生徒・保護者様<br>専用ページ</a></div>
         </div>
+
+
+        
+        <div class="hamburger-wrap">
+            <input id="mobile-menu-toggler" type="checkbox" name="toggler" class="toggler">
+            <div class="hamburger">
+                <div>
+                </div>
+            </div>
+
+        </div>
+    
     </nav>
+    <div id="menu-list">
+        <div class="menu-items">
+            <a href="/dist/index.html#about-container-laptop">教室について</a>
+            <a href="schedule.html">時間割</a>
+            <a href="price.html">料金</a>
+            <a href="events.html">年間行事</a>
+            <a href="/dist/index.html#access">アクセス</a>
+
+        </div>
+    </div>
+
+
+
+
+
 
     <div id="schedule" class="schedule">
 
-        <h1 class="menu">---　授業時間割　---</h1>
+        <h1 class="menu" id="titleSchedule">---　授業時間割　---</h1>
         <div class="schedule-container">
             <div class="grid-container">
                 <div class="emp">empty</div>
                 <div class="Mon">月</div>
                 <div class="MonEmp"></div>
                 <div class="Tue">火</div>
-                <div class="TueEmp">お休み</div>
+                <div class="MonEmp">お休み</div>
                 <div class="Wed">水</div>
-                <div class="WedEmp">お休み</div>
+                <!-- <div class="WedEmp">お休み</div> -->
                 <div class="Thur">木</div>
                 <div class="ThurEmp"></div>
                 <div class="Fri">金</div>
-                <div class="FriEmp">お休み</div>
+                <!-- <div class="FriEmp">お休み</div> -->
+                <div class="Sat">土</div>
+                <div class="SatEmp">お休み</div>
 
-
-                <div class="time1">09:00<br><br>10:00</div>
-                <div class="time2">10:00<br><br>11:00</div>
+                <!-- <div class="time1">09:00<br><br><br>10:00</div>
+                <div class="time2">10:00<br><br><br>11:00</div> -->
                 <div class="time3">16:00<br><br><br>17:00</div>
                 <div class="time4">17:00<br><br><br>18:00</div>
                 <div class="time5">18:00<br><br><br>19:00</div>
                 <div class="time6">19:00<br><br><br>20:00</div>
-
-                <div class="class3">月曜<br>１部</div>
-                <div class="class4">月曜<br>２部</div>
-                <div class="class5">月曜<br>３部</div>
-                <div class="class6">月曜<br>４部</div>
-                <div class="class7">木曜<br>１部</div>
-                <div class="class8">木曜<br>２部</div>
-                <div class="class9">木曜<br>３部</div>
-                <div class="class10">木曜<br>４部</div>
+                <div class="class1-tue">火曜<br>1部</div>
+                <div class="class2-tue">火曜<br>2部</div>
+                <div class="class3-tue">火曜<br>3部</div>
+                <div class="class4-tue">火曜<br>4部</div>
+                <div class="class1-wed">水曜<br>1部</div>
+                <div class="class2-wed">水曜<br>2部</div>
+                <div class="class3-wed">水曜<br>3部</div>
+                <div class="class4-wed">水曜<br>4部</div>
+                <!-- <div class="class1-mon">月曜1部</div>
+                <div class="class2-mon">月曜2部</div>
+                <div class="class3-mon">月曜3部</div>
+                <div class="class4-mon">月曜4部</div> -->
+                <div class="class1-thu">木曜<br>1部</div>
+                <div class="class2-thu">木曜<br>2部</div>
+                <div class="class3-thu">木曜<br>3部</div>
+                <div class="class4-thu">木曜<br>4部</div>
+                <div class="class1-fri">金曜<br>1部</div>
+                <div class="class2-fri">金曜<br>2部</div>
+                <div class="class3-fri">金曜<br>3部</div>
+                <div class="class4-fri">金曜<br>4部</div>
             </div>
             <div class="schedule-detail">
                 
@@ -86,4 +127,5 @@
 
 </footer>
 </body>
+<script src="main.js"></script>
 </html>

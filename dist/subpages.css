@@ -10,6 +10,9 @@
     font-size: 1.8em;
     font-weight: bold;
     display: flex;
+    /* background-color: olive; */
+    align-items: center;
+    justify-content: center;
 
 }
 #logo-wrap a{
@@ -26,7 +29,7 @@
 }
 nav {
     height: 80px;
-    box-shadow: -3px 23px 52px -26px rgba(0,0,0,0.35);
+    box-shadow: -3px 23px 52px -26px rgba(0,0,0,0.7);
 }
 
 nav, .nav {
@@ -117,19 +120,163 @@ a {
         color: white;
     }
 }
+
+/* hamburger menu */
+
+.hamburger-wrap, .toggler {
+    position: absolute;
+    /* background-color: yellow; */
+    right: 0;
+    width: 40px;
+    height: 60px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.toggler {
+    opacity: 0;
+}
+
+.hamburger-wrap .hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    width: 40px;
+    height: 60px;
+    /* background: rgba(88, 88, 88, 0.2); */
+}
+
+#menu-list {
+    position: absolute;
+    /* background-color: rgb(46, 184, 114, 0.6); */
+    height: 400px;
+    width: 100%;
+    z-index: 3;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* display: none; */
+}
+
+.menu-items {
+    background-color: rgba(72, 92, 82, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    width: 80%;
+    padding: 10px;
+    border-radius: 10%;
+}
+
+.menu-items a {
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.menu-items a:hover {
+    background-color: white;
+    /* padding: 20px 0; */
+}
+
+.btns-wrap {
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: smaller;
+}
+
+/* Hamburger Line */
+
+.hamburger-wrap .hamburger>div {
+    position: relative;
+    flex: none;
+    width: 100%;
+    height: 2px;
+    background: rgba(88, 88, 88, 1.0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+/* Hamburger Lines - Top & Bottom */
+
+.hamburger-wrap .hamburger>div::before, .hamburger-wrap .hamburger>div::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+}
+
+/* Moves Line Down */
+
+.hamburger-wrap .hamburger>div::after {
+    top: 10px;
+}
+
+/* Toggler Animation */
+
+.hamburger-wrap .toggler:checked+.hamburger>div {
+    transform: rotate(135deg);
+}
+
+/* Turns Lines Into X */
+
+.hamburger-wrap .toggler:checked+.hamburger>div:before, .hamburger-wrap .toggler:checked+.hamburger>div:after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+/* Rotate On Hover When Checked */
+
+.hamburger-wrap .toggler:checked:hover+.hamburger>div {
+    transform: rotate(225deg);
+}
+
+@media only screen and (min-width: 900px) {
+    .hamburger-wrap {
+        display: none;
+    }
+}
+
+/* title */
+.menu {
+    padding-top: 40px ;
+    display: flex;
+    align-items: center;
+justify-content: center;
+/* background-color: yellow; */
+}
+#price, #titleSchedule{
+    padding-bottom: 10%;
+}
+#price {
+    padding-bottom: 0;
+}
+
 /* schedule */
 
 .schedule {
-    /* background: red;  */
+    /* background: red; */
     display: flex;
     flex-direction: column;
-    height: auto;
-    
 }
 
-.menu {
-text-align: center;
-margin-top: 5%;
+.schedule-title {
+    color: rgb(46, 184, 114, 1);
+    height: 200px;
+    display: flex;
+    justify-content: center;
 }
 
 .schedule-title>p {
@@ -140,21 +287,21 @@ margin-top: 5%;
 .schedule-container {
     display: flex;
     flex-direction: row;
-    padding: 5% 0 20% 20px;
+    padding-left: 20px;
+    padding-bottom: 30px;
 }
 
 .grid-container {
     font-size: 1em;
     display: grid;
-    /* height: 90%; */
-    width: 50%;
-    max-width: 700px;
+    height: 100%;
+    width: 70%;
     margin: 0 auto;
     column-gap: 2px;
     row-gap: 4px;
     background: rgba(190, 191, 192, 0.11);
-    grid-template-columns: 0.5fr 1fr 0.5fr 0.5fr 1fr 0.5fr;
-    grid-template-rows: 70px 80px 80px 100px 100px 100px 100px;
+    grid-template-columns: 0.7fr 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
+    grid-template-rows: 70px 100px 100px 100px 100px;
 }
 
 .grid-container div {
@@ -163,6 +310,7 @@ margin-top: 5%;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .emp {
@@ -173,7 +321,7 @@ margin-top: 5%;
 
 .Mon {
     grid-area: 1 / 2 / 2 / 3;
-    background: rgb(46, 184, 114, 0.8);
+    background: rgb(46, 184, 114, 0.4);
     color: white;
     font-size: 2em;
 }
@@ -181,11 +329,12 @@ margin-top: 5%;
 .MonEmp {
     grid-area: 2 / 2 / 8 / 3;
     background: rgba(190, 191, 192, 0.21);
+    writing-mode: vertical-rl;
 }
 
 .Tue {
     grid-area: 1 / 3 / 2 / 4;
-    background: rgb(46, 184, 114, 0.4);
+    background: rgb(46, 184, 114, 0.8);
     color: white;
     font-size: 2em;
 }
@@ -199,7 +348,7 @@ margin-top: 5%;
 
 .Wed {
     grid-area: 1 / 4 / 2 / 5;
-    background: rgb(46, 184, 114, 0.4);
+    background: rgb(46, 184, 114, 0.8);
     color: white;
     font-size: 2em;
 }
@@ -225,7 +374,7 @@ margin-top: 5%;
 
 .Fri {
     grid-area: 1 / 6 / 2 / 7;
-    background: rgb(46, 184, 114, 0.4);
+    background: rgb(46, 184, 114, 0.8);
     color: white;
     font-size: 2em;
 }
@@ -246,119 +395,174 @@ margin-top: 5%;
 
 .SatEmp {
     grid-area: 2 / 7 / 8 / 8;
-    background: rgba(190, 191, 192, 1);
+    background: rgba(190, 191, 192, 0.21);
     writing-mode: vertical-rl;
 }
 
-.time1 {
-    grid-area: 2 / 1 / 3 / 2;
-    background: rgb(46, 184, 114, 0.1);
-}
-
-.time2 {
-    grid-area: 3 / 1 / 4 / 2;
-    background: rgb(46, 184, 114, 0.3);
-}
-
 .time3 {
-    grid-area: 4 / 1 / 5 / 2;
-    background: rgb(46, 184, 114, 0.1);
+    grid-area: 2 / 1 / 3 / 2;
+    background: rgb(254, 255, 234, 1);
 }
 
 .time4 {
-    grid-area: 5 / 1 / 6 / 2;
-    background: rgb(46, 184, 114, 0.3);
+    grid-area: 3/ 1 / 4 / 2;
+    background: rgb(254, 255, 234, 0.3);
 }
 
 .time5 {
-    grid-area: 6 / 1 / 7 / 2;
-    background: rgb(46, 184, 114, 0.1);
+    grid-area: 4 / 1 / 5 / 2;
+    background: rgb(254, 255, 234, 1);
 }
 
 .time6 {
-    grid-area: 7 / 1 / 8 / 2;
-    background: rgb(46, 184, 114, 0.3);
+    grid-area: 5 / 1 / 6 / 2;
+    background: rgb(254, 255, 234, 0.3);
 }
 
-/* .class1 {
-    grid-area: 2 / 7 / 3 / 8;
+.class1-tue {
+    grid-area: 2 / 3 / 3/ 4;
     background: rgb(255, 93, 110, 0.88);
     border-radius: 15px;
     color: #FFF;
 }
 
-.class2 {
-    grid-area: 3 / 7 / 4 / 8;
+.class2-tue {
+    grid-area: 3 / 3 / 4 / 4;
     background: rgb(255, 93, 110, 0.88);
     border-radius: 15px;
     color: #FFF;
-} */
+}
 
-.class3 {
+.class3-tue {
+    grid-area: 4 / 3 / 5 / 4;
+    background: rgb(255, 93, 110, 0.88);
+    border-radius: 15px;
+    color: #FFF;
+}
+
+.class4-tue {
+    grid-area: 5 / 3 / 6 / 4;
+    background: rgb(255, 93, 110, 0.88);
+    border-radius: 15px;
+    color: #FFF;
+}
+
+.class1-wed {
+    grid-area: 2 / 4 / 3 / 5;
+    background: rgb(255, 93, 110, 0.88);
+    border-radius: 15px;
+    color: #FFF;
+}
+
+.class2-wed {
+    grid-area: 3 / 4 / 4 / 5;
+    background: rgb(255, 93, 110, 0.88);
+    border-radius: 15px;
+    color: #FFF;
+}
+
+.class3-wed {
+    grid-area: 4 / 4 / 5 / 5;
+    background: rgb(255, 93, 110, 0.88);
+    border-radius: 15px;
+    color: #FFF;
+}
+
+.class4-wed {
+    grid-area: 5 / 4 / 6 / 5;
+    background: rgb(255, 93, 110, 0.88);
+    border-radius: 15px;
+    color: #FFF;
+}
+
+.class1-mon {
     grid-area: 4 / 2 / 5 / 3;
     background: rgb(255, 93, 110, 0.88);
     border-radius: 15px;
     color: #FFF;
 }
 
-.class4 {
+.class2-mon {
+    grid-area: 2 / 2 / 3 / 3;
+    background: rgb(255, 93, 110, 0.88);
+    border-radius: 15px;
+    color: #FFF;
+}
+
+.class3-mon {
+    grid-area: 3 / 2 / 4 / 3;
+    background: rgb(255, 93, 110, 0.88);
+    border-radius: 15px;
+    color: #FFF;
+}
+
+.class4-mon {
     grid-area: 5 / 2 / 6 / 3;
     background: rgb(255, 93, 110, 0.88);
     border-radius: 15px;
     color: #FFF;
 }
 
-.class5 {
-    grid-area: 6 / 2 / 7 / 3;
+.class1-thu {
+    grid-area: 2 / 5 / 3 / 6;
     background: rgb(255, 93, 110, 0.88);
     border-radius: 15px;
     color: #FFF;
 }
 
-.class6 {
-    grid-area: 7 / 2 / 8 / 3;
+.class2-thu {
+    grid-area: 3 / 5 / 4 / 6;
     background: rgb(255, 93, 110, 0.88);
     border-radius: 15px;
     color: #FFF;
 }
 
-.class7 {
+.class3-thu {
     grid-area: 4 / 5 / 5 / 6;
     background: rgb(255, 93, 110, 0.88);
     border-radius: 15px;
     color: #FFF;
 }
 
-.class8 {
+.class4-thu {
     grid-area: 5 / 5 / 6 / 6;
     background: rgb(255, 93, 110, 0.88);
     border-radius: 15px;
     color: #FFF;
 }
 
-.class9 {
-    grid-area: 6 / 5 / 7 / 6;
+.class1-fri {
+    grid-area: 2 / 6 / 3 / 7;
     background: rgb(255, 93, 110, 0.88);
     border-radius: 15px;
     color: #FFF;
 }
 
-.class10 {
-    grid-area: 7 / 5 / 8 / 6;
+.class2-fri {
+    grid-area: 3 / 6 / 4 / 7;
+    background: rgb(255, 93, 110, 0.88);
+    border-radius: 15px;
+    color: #FFF;
+}
+
+.class3-fri {
+    grid-area: 4 / 6 / 5 / 7;
+    background: rgb(255, 93, 110, 0.88);
+    border-radius: 15px;
+    color: #FFF;
+}
+
+.class4-fri {
+    grid-area: 5 / 6 / 6 / 7;
     background: rgb(255, 93, 110, 0.88);
     border-radius: 15px;
     color: #FFF;
 }
 
 .schedule-detail {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
+    margin: auto 0;
+    width: 60%;
     padding-left: 40px;
-}
-
-.schedule-detail h1 {
-    margin-bottom: 50%;
 }
 
 @media only screen and (max-width: 800px) {
@@ -385,6 +589,7 @@ margin-top: 5%;
         width: 100%;
     }
 }
+
 
 /*price */
 
@@ -416,7 +621,7 @@ margin-top: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     margin: 0 2%;
     position: relative;
     height: 400px;
@@ -425,11 +630,15 @@ margin-top: 5%;
     margin-bottom: 20%;
     border-radius: 2em;
 }
+.price-box h2{
+background-color: khaki;
 
+    }
 .wrap-price-boxes {
     display: flex;
     flex-direction: row;
     align-items: center;
+
 }
 
 .circle {
@@ -448,7 +657,7 @@ margin-top: 5%;
 }
 
 .price-detail {
-    padding: 0 5%;
+    padding: 10% 5%;
 }
 
 
@@ -530,7 +739,7 @@ margin-top: 5%;
     display: flex;
     flex-direction: row;
 }
-.box {
+.square {
     display: flex;
     flex-direction: row;
     /* background: lightsalmon; */

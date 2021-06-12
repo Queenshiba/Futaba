@@ -12,38 +12,58 @@
 //     lpImage = newURL;
 // // })
 
-$(function () {
-    var overlay = $('<div id="overlay"></div>');
-    overlay.show();
-    overlay.appendTo(document.body);
-    $('.popup').show();
-    $('.close').click(function () {
-        $('.popup').hide();
-        overlay.appendTo(document.body).remove();
-        return false;
-    });
+// $(function () {
+//     var overlay = $('<div id="overlay"></div>');
+//     overlay.show();
+//     overlay.appendTo(document.body);
+//     $('.popup').show();
+//     $('.close').click(function () {
+//         $('.popup').hide();
+//         overlay.appendTo(document.body).remove();
+//         return false;
+//     });
 
 
-    $('.x').click(function () {
-        $('.popup').hide();
-        overlay.appendTo(document.body).remove();
-        return false;
-    });
-    $('.jump').click(function () {
-        $(document).scrollTop($("#campaign").offset().top);
-        $('.popup').hide();
-        overlay.appendTo(document.body).remove();
-        return false;
-    });
-});
+//     $('.x').click(function () {
+//         $('.popup').hide();
+//         overlay.appendTo(document.body).remove();
+//         return false;
+//     });
+//     $('.jump').click(function () {
+//         $(document).scrollTop($("#campaign").offset().top);
+//         $('.popup').hide();
+//         overlay.appendTo(document.body).remove();
+//         return false;
+//     });
+// });
 
-const mobileMenu = document.getElementById("mobile-menu");
-const mobileItems = document.getElementById("menu-items");
-mobileItems.childNodes.forEach(child => {
-    child.addEventListener("click", () => {
-        mobileMenu.checked = false;
-    })
+let mobileMenuToggler = document.querySelector('input[name=toggler]');
+let menuList = document.getElementById("menu-list");
+
+mobileMenuToggler.addEventListener('change', () => {
+
+    if (mobileMenuToggler.checked) {
+        // console.log("Checkbox is checked..");
+        menuList.style.display=""
+    } else {
+        // console.log("Checkbox is not checked..");
+        menuList.style.display ="none";
+    }
 })
+
+
+// when click a link, close mobile nav
+
+let links = document.getElementsByTagName('a')
+let menuItems = document.getElementsByClassName("menu-items");
+var show = function() { alert('hahahha'); }
+for (var i = links.length - 1; i >= 0; --i) {
+    menuList.style.display ="none";
+}
+
+
+
+
 
 window.onscroll = function () { scrollFunction() };
 // mobileMenu.checked = false;
