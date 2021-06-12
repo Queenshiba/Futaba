@@ -46,11 +46,15 @@
     font-size: 1.8em;
     font-weight: bold;
     display: flex;
-    /* background-color: olive; */
+
     align-items: center;
     justify-content: center;
+    width: max-content;
 }
-
+#logo-wrap p{
+    display: inline-block;
+    white-space: nowrap;
+}
 #logo-wrap a {
     /* background-color: gold; */
     width: 100%;
@@ -236,7 +240,7 @@ a {
     height: fit-content;
     width: 80%;
     padding: 10px;
-    border-radius: 10%;
+
 }
 
 .menu-items a {
@@ -313,9 +317,10 @@ a {
 }
 
 @media only screen and (min-width: 900px) {
-    .hamburger-wrap {
+    .hamburger-wrap .menu-list {
         display: none;
     }
+    
 }
 
 /* about */
@@ -336,7 +341,9 @@ a {
     justify-content: center;
     align-items: center;
 }
-
+.title {
+    text-align: center;
+}
 #about-container-laptop img {
     height: 60px;
     padding: 5% 5% 5% 0;
