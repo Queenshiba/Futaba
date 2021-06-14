@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="/dist/style.css">
+    <link rel="stylesheet" href="subpages.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
@@ -17,40 +18,86 @@
 </head>
 
 <body>
-    <div class="container" id="lp-container-laptop" scr="/dist/">
-        <div class="green">
+    <button onclick=" topFunction()" id="myBtn" title="Go to top"><img class="arrow" src="/img/gototop.png"
+            alt="">Topに戻る</button>
+    <div class="container" id="lp-container-laptop">
+        <!-- <img src="/dist/img/futaba-lp.jpg" data-src="/dist/img/futaba-lp10.jpg" alt=""> -->
+        <div class="green" id="green">
             <p id="school-branch">伊丹珠算振興会　松ヶ丘教場</p>
         </div>
         <nav>
             <div id="menu-wrap">
-                <a href="#">教室について</a>
-                <a href="#">時間割</a>
-                <a href="#">料金</a>
+                <a href="#about-container-laptop">教室について</a>
+                <a href="schedule.html">時間割</a>
+                <a href="price.html">料金</a>
             </div>
             <!-- <div class="logo-sub"> -->
-            <div class="nav" id="logo-wrap" href="#">
-                <p>ふたば</p>
-                <img src="/dist/img/futaba-logo.png" alt="" id="futaba-logo">
-                <p>そろばん</p>
+
+            <div class="nav" id="logo-wrap">
+                <a href="/dist/index.html">
+                    <p>ふたば</p>
+                    <img src="/dist/img/futaba-logo.png" data-src="/dist/img/futaba-logo10.png" alt="" id="futaba-logo">
+                    <p>そろばん</p>
+                </a>
             </div>
 
             <!-- </div> -->
             <div id="menu-wrap">
-                <a href="#">年間行事</a>
-                <a href="#">アクセス</a>
-                <div id="btn-only-students"><a href="#">生徒・保護者様<br>専用ページ</a></div>
+                <a href="schedule.html">年間行事</a>
+                <a href="#access">アクセス</a>
+                <div id="btn-only-students-lp">
+                    <a href="https://tymrie8787.wixsite.com/futabasoroban">生徒・保護者様<br>専用ページ</a>
+                </div>
+            </div>
+
+
+            <div class="hamburger-wrap" id="click-nav">
+                <input id="mobile-menu-toggler" type="checkbox" name="toggler" class="toggler">
+                <div class="hamburger">
+                    <div>
+                    </div>
+                </div>
+
             </div>
         </nav>
+
+
+        <div id="menu-list">
+            <div class="menu-items">
+                <a href="/dist/index.html#about-container-laptop">教室について</a>
+                <a href="schedule.html">時間割</a>
+                <a href="price.html">料金</a>
+                <a href="events.html">年間行事</a>
+                <a href="/dist/index.html#access">アクセス</a>
+
+            </div>
+        </div>
+
+
+
         <div id="main-container">
             <h1>そろばんで<br>集中力・忍耐力・計算力を<br>高めよう！</h1>
-            <div id="btn-contact"><a href="#">お問い合わせ</a></div>
+            <div id="btn-contact"><a href="tel:08061758516">お問い合わせ</a></div>
+            <div id="btn-only-students-mb">
+                <a href="https://tymrie8787.wixsite.com/futabasoroban">生徒・保護者様<br>専用ページ</a>
+            </div>
+
         </div>
+
     </div>
+
+
+
+
+
+
+
+
 
     <div class="container" id="about-container-laptop">
 
         <div class="section" id="about-left">
-            <h1 class="menu" id="about">ふたばそろばんとは？</h1>
+            <h1 class="menu-title" id="about">ふたばそろばんとは？</h1>
 
             <h2>兵庫県伊丹市松ヶ丘にあるそろばん教室</h2>
             <h2>20年以上の指導経験のある講師</h2>
@@ -76,7 +123,7 @@
             <div class="wrap">
                 <img src="/dist/img/icon-clock.png" alt="" srcset="">
                 <div class="text-area">
-                    <h2 class="title">成果がでる！週２回授業制度</h2>
+                    <h2 class="title">成果がでる！<br>週２回授業制度</h2>
                     <p class="detail">
                         目標の検定に向け、着実に学習した知識・技術を身に付けられるよう週２回授業体制をとっております。一人では復習、繰り返し行うことは難しいかもしれませんが、授業では講師のサポートのもと頑張ることができます。
                     </p>
@@ -96,38 +143,41 @@
     </div>
 
     <div id="wrap-3boxes">
-        <a href="/dist/schedule.html"></a>
+
         <div class="box" id="box1">
-            <div class="title-wrap">
+            <a href="/dist/schedule.html">
                 <h3>schedule</h3>
                 <h2 class="title-inbox">時間割</h2>
-                <img src="./img/icon-schedule.png" alt="" srcset="">
-            </div>
-            <div class="detail-btn">>詳しくはこちら</div>
-        </div>
-        </a>
+                <img src="./img/icon-schedule.png" loading="lazy" alt="" srcset="">
+                <p>>詳しくはこちら</p>
+            </a>
 
-        <a href="/dist/price.html">
-            <div class="box" id="box2">
-                <div class="title-wrap">
-                    <h3>price</h3>
-                    <h2 class="title-inbox">料金</h2>
-                    <img src="./img/icon-price.png" alt="" srcset="">
-                </div>
-                <div class="detail-btn">>詳しくはこちら</div>
-            </div>
-        </a>
-        
-        <a href="/dist/events.html">
-            <div class="box" id="box3">
-                <div class="title-wrap">
-                    <h3>events</h3>
-                    <h2 class="title-inbox">年間行事</h2>
-                    <img src="./img/icon-event.png" alt="" srcset="">
-                </div>
-                <div class="detail-btn">>詳しくはこちら</div>
-            </div>
-        </a>
+        </div>
+
+
+
+        <div class="box" id="box2">
+            <a href="/dist/price.html">
+                <h3>price</h3>
+                <h2 class="title-inbox">料金</h2>
+                <img src="./img/icon-price.png" alt="" srcset="">
+
+                <p>>詳しくはこちら</p>
+            </a>
+        </div>
+
+
+
+        <div class="box" id="box3">
+            <a href="/dist/events.html">
+                <h3>events</h3>
+                <h2 class="title-inbox">年間行事</h2>
+                <img src="./img/icon-event.png" alt="" srcset="">
+
+                <p>>詳しくはこちら</p>
+            </a>
+        </div>
+
     </div>
 
 
@@ -138,7 +188,9 @@
 
 
     <!--map -->
-    <div class="map">
+    <div class="map" id="access">
+        <img src="https://images.unsplash.com/photo-1617721928610-4d953b81bba8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+            alt="" srcset="">
         <div class="map-titles">
             <p>ACCESS</p>
             <h2>アクセス</h2>
@@ -151,8 +203,9 @@
                     <img src="/dist/img/icon-location.png" alt="">
                     <div id="adress-wrap" class="map-detail-wrap">
                         <p>〒664-0024</p>
-                        <p>兵庫県伊丹市松ケ丘３丁目11</p>
-                        <p>松ケ丘自治会館</p>
+                        <p>兵庫県伊丹市松ケ丘１丁目197</p>
+                        <p>アミューズ21　１階</p>
+
                     </div>
                 </div>
 
@@ -190,9 +243,10 @@
             </div>
             <img src="./img/futaba-logo-white.png" alt="">
             <div class="copyright-wrap">
-                <p>Copyright © 2021 ふたばそろばん All Rights Reserved.
-                </p>
-                <p>Created by <a href="http://harukashibata.com">QShiba</a></p>
+                <p>Copyright © 2021 ふたばそろばん</p>
+                <p>All Rights Reserved.</p>
+
+                <p>Created by<a href="http://harukashibata.com">QShiba</a></p>
             </div>
         </div>
     </footer>
