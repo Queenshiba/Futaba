@@ -36,7 +36,7 @@
 
 #lp-container-laptop {
     height: 90vh;
-    background-image: url(/dist/img/futaba-lp.jpg);
+    background-image: url(img/futaba-lp.jpg);
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -454,7 +454,7 @@ a {
 }
 
 #box1 {
-    background-image: url(/dist/img/schedule.jpg);
+    background-image: url(img/schedule.jpg);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -463,7 +463,7 @@ a {
 }
 
 #box2 {
-    background-image: url(/dist/img/price.jpg);
+    background-image: url(img/price.jpg);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -472,7 +472,7 @@ a {
 }
 
 #box3 {
-    background-image: url(/dist/img/events.jpg);
+    background-image: url(img/events.jpg);
     display: flex;
     flex-direction: column;
     justify-content: center;
