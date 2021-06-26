@@ -533,28 +533,28 @@ justify-content: center;
 
 .class1-fri {
     grid-area: 2 / 6 / 3 / 7;
-    background: rgb(255, 93, 110, 0.88);
+    background: rgb(255, 93, 110, 0.4);
     border-radius: 15px;
     color: #FFF;
 }
 
 .class2-fri {
     grid-area: 3 / 6 / 4 / 7;
-    background: rgb(255, 93, 110, 0.88);
+    background: rgb(255, 93, 110, 0.4);
     border-radius: 15px;
     color: #FFF;
 }
 
 .class3-fri {
     grid-area: 4 / 6 / 5 / 7;
-    background: rgb(255, 93, 110, 0.88);
+    background: rgb(255, 93, 110, 0.4);
     border-radius: 15px;
     color: #FFF;
 }
 
 .class4-fri {
     grid-area: 5 / 6 / 6 / 7;
-    background: rgb(255, 93, 110, 0.88);
+    background: rgb(255, 93, 110, 0.4);
     border-radius: 15px;
     color: #FFF;
 }
