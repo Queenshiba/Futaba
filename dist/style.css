@@ -401,6 +401,7 @@ a {
     }
     .wrap {
         flex-direction: column;
+        padding-bottom: 20%;
     }
     #about-right {
         width: 90%;
