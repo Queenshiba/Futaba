@@ -236,12 +236,10 @@ a {
 
 #menu-list {
     position: absolute;
-    /* background-color: rgb(46, 184, 114, 0.6); */
     height: 400px;
     width: 100%;
     z-index: 3;
     display: flex;
-    /* align-items: center; */
     justify-content: center;
     /* display: none; */
 }
@@ -331,9 +329,10 @@ a {
 }
 
 @media only screen and (min-width: 900px) {
-    .hamburger-wrap .menu-list {
+    .hamburger-wrap #menu-list {
         display: none;
     }
+    
 }
 
 /* about */
