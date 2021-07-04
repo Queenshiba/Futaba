@@ -39,7 +39,7 @@
 
 let mobileMenuToggler = document.querySelector('input[name=toggler]');
 let menuList = document.getElementById("menu-list");
-
+menuList.style.display = "none";
 mobileMenuToggler.addEventListener('change', () => {
 
     if (mobileMenuToggler.checked) {
@@ -57,16 +57,16 @@ mobileMenuToggler.addEventListener('change', () => {
 let links = document.getElementsByTagName('a')
 let menuItems = document.getElementsByClassName("menu-items");
 var show = function () { alert('hahahha'); }
-for (var i = links.length - 1; i >= 0; --i) {
-    if (menuList.style.display === ""){
-        menuList.style.display = "none";
-} else if(menuList.style.display === "none"){
-    menuList.style.display = "";
-}
+// for (var i = links.length - 1; i >= 0; --i) {
+//     if (menuList.style.display === ""){
+//         menuList.style.display = "none";
+// } else if(menuList.style.display === "none"){
+//     menuList.style.display = "";
+// }
 links[i].addEventListener("click",()=> {
     menuList.style.display = "none"
 })
-}
+// }
 
 
 

@@ -10,7 +10,7 @@
 #myBtn {
     display: none;
     position: fixed;
-    bottom: 20px;
+    bottom: 100px;
     right: 30px;
     z-index: 99;
     font-size: 15px;
@@ -117,8 +117,6 @@ a {
     padding: 0.2em 0;
 }
 
-
-
 #menu-wrap a:hover {
     text-decoration: underline;
 }
@@ -182,6 +180,12 @@ a {
     }
     #logo-wrap {
         width: 100%;
+    }
+    #logo-wrap p{
+        font-size: 0.8em;
+    }
+    #logo-wrap img{
+        height: 30px;
     }
     #main-container {
         width: 100%;
@@ -250,6 +254,7 @@ a {
     height: fit-content;
     width: 80%;
     padding: 10px;
+
 }
 
 .menu-items a {
