@@ -83,7 +83,7 @@ function topFunction() {
 }
 
 function mapAccess() {
-    var myCenter = new google.maps.LatLng(34.786510, 135.389497);
+    var myCenter = new google.maps.LatLng(34.78769938041231, 135.3887554620678);
     var mapCanvas = document.getElementById('maps');
     var mapOptions = {
         center: myCenter,
