@@ -56,8 +56,7 @@ mobileMenuToggler.addEventListener('change', () => {
 
 let links = document.getElementsByTagName('a')
 let menuItems = document.getElementsByClassName("menu-items");
-var show = function () { alert('hahahha'); }
-// for (var i = links.length - 1; i >= 0; --i) {
+for (var i = links.length - 1; i >= 0; --i) {
 //     if (menuList.style.display === ""){
 //         menuList.style.display = "none";
 // } else if(menuList.style.display === "none"){
@@ -66,7 +65,7 @@ var show = function () { alert('hahahha'); }
 links[i].addEventListener("click",()=> {
     menuList.style.display = "none"
 })
-// }
+}
 
 
 
