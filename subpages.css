@@ -102,6 +102,12 @@ a {
     #logo-wrap {
         width: 100%;
     }
+    #logo-wrap p{
+        font-size: 0.8em;
+    }
+    #logo-wrap img{
+        height: 30px;
+    }
     #main-container {
         width: 100%;
         align-items: center;
