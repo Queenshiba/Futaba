@@ -44,10 +44,10 @@ mobileMenuToggler.addEventListener('change', () => {
 
     if (mobileMenuToggler.checked) {
         // console.log("Checkbox is checked..");
-        menuList.style.display=""
+        menuList.style.display = ""
     } else {
         // console.log("Checkbox is not checked..");
-        menuList.style.display ="none";
+        menuList.style.display = "none";
     }
 })
 
@@ -56,9 +56,16 @@ mobileMenuToggler.addEventListener('change', () => {
 
 let links = document.getElementsByTagName('a')
 let menuItems = document.getElementsByClassName("menu-items");
-var show = function() { alert('hahahha'); }
+var show = function () { alert('hahahha'); }
 for (var i = links.length - 1; i >= 0; --i) {
-    menuList.style.display ="none";
+    if (menuList.style.display === ""){
+        menuList.style.display = "none";
+} else if(menuList.style.display === "none"){
+    menuList.style.display = "";
+}
+links[i].addEventListener("click",()=> {
+    menuList.style.display = "none"
+})
 }
 
 

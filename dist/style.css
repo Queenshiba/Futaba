@@ -180,9 +180,9 @@ a {
     #menu-wrap {
         display: none;
     }
-    /* #logo-wrap {
-        background-color: pink;
-    } */
+    #logo-wrap {
+        width: 100%;
+    }
     #main-container {
         width: 100%;
         align-items: center;
