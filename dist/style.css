@@ -181,10 +181,10 @@ a {
     #logo-wrap {
         width: 100%;
     }
-    #logo-wrap p{
+    #logo-wrap p {
         font-size: 0.8em;
     }
-    #logo-wrap img{
+    #logo-wrap img {
         height: 30px;
     }
     #main-container {
@@ -252,7 +252,6 @@ a {
     height: fit-content;
     width: 80%;
     padding: 10px;
-
 }
 
 .menu-items a {
@@ -332,7 +331,6 @@ a {
     .hamburger-wrap #menu-list {
         display: none;
     }
-    
 }
 
 /* about */
@@ -402,6 +400,10 @@ a {
         border-bottom: 5px solid white;
         width: 100%;
         border-right: none;
+        padding-bottom: 80px;
+    }
+    #about-right {
+        padding-top: 50px;
     }
     .wrap {
         flex-direction: column;
