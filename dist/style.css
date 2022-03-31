@@ -3,7 +3,66 @@
     margin: 0;
     font-family: 'Kiwi Maru', serif;
     /* font-family: 'M PLUS Rounded 1c', sans-serif; */
+    background-color: #2EB872;
+
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 90%;
+    height: 100vh;
+}
+
+.message-container img {
+    height: 90px;
+    padding: 10% 0;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+h1, h2, h3, p {
+    color: white;
+    justify-content: center;
+    align-items: center;
+
+}
+
+p {
+    word-wrap: inherit;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    padding: 15% 0;
+}
+
+@media only screen and (min-width: 800px) {
+    .message-container {
+        width: 70%;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .message-container {
+        width: 50%;
+    }
+}
+@media only screen and (min-width: 1700px) {
+    .message-container {
+        width: 30%;
+    }
+}
+
+
 
 /* landing page */
 
@@ -175,18 +234,23 @@ a {
     nav {
         height: 60px;
     }
+
     #menu-wrap {
         display: none;
     }
+
     #logo-wrap {
         width: 100%;
     }
+
     #logo-wrap p {
         font-size: 0.8em;
     }
+
     #logo-wrap img {
         height: 30px;
     }
+
     #main-container {
         width: 100%;
         align-items: center;
@@ -194,6 +258,7 @@ a {
         height: 90%;
         margin-left: auto;
     }
+
     #btn-only-students-mb {
         margin-top: 5%;
         background-color: rgb(255, 93, 110, 1);
@@ -393,30 +458,37 @@ a {
     .title {
         font-size: x-large;
     }
+
     #about-container-laptop {
         flex-direction: column;
     }
+
     #about-left {
         border-bottom: 5px solid white;
         width: 100%;
         border-right: none;
         padding-bottom: 80px;
     }
+
     #about-right {
         padding-top: 50px;
     }
+
     .wrap {
         flex-direction: column;
         padding-bottom: 20%;
     }
+
     #about-right {
         width: 90%;
         margin: 0 auto;
     }
+
     #about-left>h2 {
         margin-left: none;
         margin: 0 auto;
     }
+
     #about-left>h1 {
         margin-left: none;
         margin: 0 auto;
@@ -516,6 +588,7 @@ a {
     #wrap-3boxes {
         flex-direction: column;
     }
+
     .box {
         min-width: 280px;
         min-height: 280px;
@@ -611,9 +684,11 @@ a {
     .map {
         background-size: auto 100%;
     }
+
     .map-container {
         flex-direction: column;
     }
+
     .map-wrap {
         width: 80%;
         padding: 0;
@@ -621,11 +696,13 @@ a {
         height: 160px;
         font-size: smaller;
     }
+
     #maps {
         width: 80%;
         padding: 0;
         height: 160px;
     }
+
     .map-detail-wrap {
         font-size: smaller;
         padding-left: 10px;
